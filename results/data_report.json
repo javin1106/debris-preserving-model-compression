@@ -1,0 +1,241 @@
+{
+  "raw_label_hist": {
+    "0": 159971645,
+    "1": 4696,
+    "2": 4308,
+    "3": 4972,
+    "4": 1454,
+    "5": 13222,
+    "6": 234568,
+    "7": 496702,
+    "8": 376061,
+    "9": 1225,
+    "10": 170306,
+    "11": 122753,
+    "12": 20374,
+    "13": 15701,
+    "14": 2541,
+    "15": 12272
+  },
+  "bands": [
+    "Scene_0/60/Scene_0_L2R_rhorc_442_1.tif",
+    "Scene_0/10/Scene_0_L2R_rhorc_492_1.tif",
+    "Scene_0/10/Scene_0_L2R_rhorc_559_1.tif",
+    "Scene_0/10/Scene_0_L2R_rhorc_665_1.tif",
+    "Scene_0/20/Scene_0_L2R_rhorc_704_1.tif",
+    "Scene_0/20/Scene_0_L2R_rhorc_739_1.tif",
+    "Scene_0/20/Scene_0_L2R_rhorc_780_1.tif",
+    "Scene_0/10/Scene_0_L2R_rhorc_833_1.tif",
+    "Scene_0/20/Scene_0_L2R_rhorc_864_1.tif",
+    "Scene_0/20/Scene_0_L2R_rhorc_1610_1.tif",
+    "Scene_0/20/Scene_0_L2R_rhorc_2186_1.tif"
+  ],
+  "splits": {
+    "train": {
+      "n_patches": 1433,
+      "n_split_ids": 1433,
+      "X_shape": [
+        1433,
+        11,
+        240,
+        240
+      ],
+      "X_dtype": "float32",
+      "y_dtype": "int64",
+      "y_unique": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "nan_fraction_X": 0.0025167553500814142,
+      "pixels_total": 82540800,
+      "pixels_labelled": 761887,
+      "unlabelled_fraction": 0.9907695709273474,
+      "class_counts": [
+        2561,
+        1838,
+        2559,
+        1081,
+        5908,
+        140584,
+        264943,
+        157242,
+        469,
+        89062,
+        70002,
+        9975,
+        6988,
+        1339,
+        7336
+      ],
+      "patches_with_debris": 250,
+      "getitem_image": {
+        "shape": [
+          11,
+          240,
+          240
+        ],
+        "dtype": "float32"
+      },
+      "getitem_target": {
+        "shape": [
+          240,
+          240
+        ],
+        "dtype": "int64"
+      },
+      "vscp_demo": {
+        "batch_in": 5,
+        "batch_added": 2,
+        "per_pair": [
+          {
+            "target_img": 0,
+            "source_img": 2,
+            "source_labelled_px": 382,
+            "labels_changed_px": 382,
+            "pasted_labels_match_source": true,
+            "pasted_bands_match_source": true,
+            "unpasted_px_unchanged": true,
+            "labelled_px_before": 40,
+            "labelled_px_after": 422
+          },
+          {
+            "target_img": 1,
+            "source_img": 3,
+            "source_labelled_px": 52,
+            "labels_changed_px": 52,
+            "pasted_labels_match_source": true,
+            "pasted_bands_match_source": true,
+            "unpasted_px_unchanged": true,
+            "labelled_px_before": 1498,
+            "labelled_px_after": 1550
+          }
+        ]
+      }
+    },
+    "val": {
+      "n_patches": 642,
+      "n_split_ids": 642,
+      "X_shape": [
+        642,
+        11,
+        240,
+        240
+      ],
+      "X_dtype": "float32",
+      "y_dtype": "int64",
+      "y_unique": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "nan_fraction_X": 0.0022108374437521633,
+      "pixels_total": 36979200,
+      "pixels_labelled": 358121,
+      "unlabelled_fraction": 0.9903156098563517,
+      "class_counts": [
+        1162,
+        1167,
+        627,
+        95,
+        3740,
+        42456,
+        92294,
+        125565,
+        369,
+        39076,
+        40019,
+        3998,
+        3923,
+        928,
+        2702
+      ],
+      "patches_with_debris": 98
+    },
+    "test": {
+      "n_patches": 728,
+      "n_split_ids": 728,
+      "X_shape": [
+        728,
+        11,
+        240,
+        240
+      ],
+      "X_dtype": "float32",
+      "y_dtype": "int64",
+      "y_unique": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "nan_fraction_X": 0.0019297651133588633,
+      "pixels_total": 41932800,
+      "pixels_labelled": 361147,
+      "unlabelled_fraction": 0.9913874818757631,
+      "class_counts": [
+        973,
+        1303,
+        1786,
+        278,
+        3574,
+        51528,
+        139465,
+        93254,
+        387,
+        42168,
+        12732,
+        6401,
+        4790,
+        274,
+        2234
+      ],
+      "patches_with_debris": 124
+    }
+  },
+  "model_size": {
+    "total": 4238063,
+    "trainable": 4238063,
+    "analytic": 4238063,
+    "diff_vs_analytic": 0,
+    "config": "third_party/mados/marinext/configs/marinext.tiny.240x240.mados.py"
+  }
+}
