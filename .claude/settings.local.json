@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(sed -i 's/^conda activate mados$/set +u; conda activate mados; set -u  # gdal activate.d script reads unset vars/' scripts/setup_env_orig_pip.sh scripts/setup_env_orig.sh)",
-      "Bash(wsl.exe -d Ubuntu -- bash -lc 'cd \"/mnt/c/Users/LENOVO/Desktop/College Labs/CV Lab/Project\" && bash scripts/setup_env_orig_pip.sh')"
-    ]
-  }
-}
