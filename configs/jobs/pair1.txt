@@ -1,0 +1,3 @@
+# Laptop pair 1 (env-orig): only 2 jobs fit in RAM (each CUDA 11.3 process holds ~4.1 GB host memory).
+p2-B-w0.125-s0-20261015-1851 --width 0.125 --seed 0
+p2-B-w0.25-s0-20261015-1851 --width 0.25 --seed 0

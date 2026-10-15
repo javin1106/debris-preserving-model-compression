@@ -1,0 +1,10 @@
+# Setting F: B + both KD terms + debris weighting on ignored pixels (full proposed method).
+setting: F
+teacher_ckpt: checkpoints/teacher/5/marinext_5.pth
+kd_T: 2.0
+kd_tau: 0.8
+lam_L: 1.0
+lam_U: 1.0
+debris_w: 2.0
+debris_w_max: 4.0
+kd_warmup_epochs: 5

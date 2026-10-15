@@ -1,0 +1,9 @@
+# Setting E: B + KD on ignored pixels only (lam_L = 0, debris_w = 1). T, tau, lam_U to tune on val.
+setting: E
+teacher_ckpt: checkpoints/teacher/5/marinext_5.pth
+kd_T: 2.0
+kd_tau: 0.8
+lam_L: 0.0
+lam_U: 1.0
+debris_w: 1.0
+kd_warmup_epochs: 5

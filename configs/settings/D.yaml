@@ -1,0 +1,6 @@
+# Setting D: B + KD on labelled pixels only (lam_U = 0). T, lam_L to tune on val.
+setting: D
+teacher_ckpt: checkpoints/teacher/5/marinext_5.pth
+kd_T: 2.0
+lam_L: 1.0
+lam_U: 0.0

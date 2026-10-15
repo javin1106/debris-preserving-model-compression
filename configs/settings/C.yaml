@@ -1,0 +1,3 @@
+# Setting C: B + extra debris-focused CE reweighting (debris class weight multiplied). Value to tune on val: {2, 4}.
+setting: C
+extra_debris_ce_weight: 2.0

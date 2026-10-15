@@ -37,9 +37,10 @@ from timm.utils import ModelEma
 from torch.nn import functional as F
 from torch.utils.data import DataLoader, Subset
 
+from .kd_loss import KDConfig, lam_U_at, total_loss
 from .metrics import confusion, scores_from_confusion
-from .official import (CLASS_NAMES, DEBRIS, IGNORE_INDEX, MADOS, NUM_CLASSES, class_distr, gen_weights,
-                       seed_all, split_dir)
+from .official import (CLASS_NAMES, DEBRIS, IGNORE_INDEX, MADOS, NUM_CLASSES, MariNext, class_distr, gen_weights,
+                       load_official_checkpoint, seed_all, split_dir)
 from .runlog import disable_tf32, env_info, make_run_id, run_dir, write_json
 from .students import build_student, count_params
 
@@ -127,10 +128,24 @@ def main(options):
     ema_decay_schedule = cosine_scheduler(options["model_ema_decay"], 0.999, options["epochs"], len(train_loader))
 
     weight = gen_weights(class_distr, c=options["weight_param"])
+    if options["extra_debris_ce_weight"] != 1.0:          # setting C: extra debris-focused reweighting
+        weight[DEBRIS] = weight[DEBRIS] * options["extra_debris_ce_weight"]
+    logging.info("CE class weights: %s", [round(float(w), 4) for w in weight])
     criterion = torch.nn.CrossEntropyLoss(ignore_index=-1, reduction="mean", weight=weight.to(device),
                                           label_smoothing=options["label_smoothing"])
     optimizer = torch.optim.Adam(model.parameters(), lr=options["lr"], weight_decay=options["decay"])
     scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, options["lr_steps"], gamma=0.1)
+
+    teacher, kd_cfg = None, None
+    if options["teacher_ckpt"]:
+        teacher = MariNext(options["input_channels"], options["output_channels"]).to(device)
+        load_official_checkpoint(teacher, options["teacher_ckpt"], device)
+        teacher.eval()
+        teacher.requires_grad_(False)
+        kd_cfg = KDConfig(T=options["kd_T"], tau=options["kd_tau"], lam_L=options["lam_L"], lam_U=options["lam_U"],
+                          debris_w=options["debris_w"], debris_w_max=options["debris_w_max"],
+                          warmup_epochs=options["kd_warmup_epochs"])
+        logging.info("teacher %s, KD %s", options["teacher_ckpt"], kd_cfg)
 
     start, best = 1, {"epoch": None, "macro_f1": -1.0}
     resume_file = rd / "resume.pth"
@@ -148,6 +163,8 @@ def main(options):
         t0 = time.time()
         model.train()
         loss_sum, n_img = 0.0, 0
+        kd_sum = {"sup": 0.0, "kd_lab": 0.0, "kd_ign": 0.0, "frac_ign_used": 0.0}
+        kd_hist = torch.zeros(NUM_CLASSES, dtype=torch.long)
         for it, (image, target) in enumerate(train_loader):
             it = len(train_loader) * (epoch - 1) + it  # global training iteration
             if options["vscp"]:
@@ -159,6 +176,18 @@ def main(options):
             optimizer.zero_grad()
             logits = F.interpolate(model(image), size=image.size()[2:4], mode="bilinear", align_corners=False)
             loss = criterion(logits, target)
+            if teacher is not None:
+                # Teacher runs live on the same augmented batch. fork_rng: the teacher's random NMF bases do not
+                # consume the training RNG stream, so the student sees exactly the same randomness as in setting B.
+                with torch.no_grad(), torch.random.fork_rng(devices=[device]):
+                    t_logits = F.interpolate(teacher(image), size=image.size()[2:4], mode="bilinear",
+                                             align_corners=False)
+                out = total_loss(loss, logits, t_logits, target, kd_cfg, epoch)
+                loss = out["loss"]
+                for k in kd_sum:
+                    kd_sum[k] += float(out.get(k, 0.0))
+                if "teacher_hist_ign" in out:
+                    kd_hist += out["teacher_hist_ign"]
             loss.backward()
             if options["clip_grad"] is not None:
                 torch.nn.utils.clip_grad_norm_(model.parameters(), options["clip_grad"])
@@ -181,6 +210,11 @@ def main(options):
         rec = {"epoch": epoch, "lr": lr, "train_loss": loss_sum / max(n_img, 1), "val_raw": short(val_raw),
                "val_ema": short(val_ema), "best_epoch": best["epoch"], "t_train_s": t_train,
                "t_epoch_s": time.time() - t0}
+        if teacher is not None:
+            nb = len(train_loader)
+            rec["kd"] = {k: v / nb for k, v in kd_sum.items()}
+            rec["kd"]["lam_U"] = lam_U_at(epoch, kd_cfg)
+            rec["kd"]["teacher_hist_ign"] = {CLASS_NAMES[i]: int(c) for i, c in enumerate(kd_hist.tolist()) if c}
         with open(rd / "epochs.jsonl", "a") as f:
             f.write(json.dumps(rec) + "\n")
         logging.info("epoch %d | train %.4f | val raw mF1 %.4f dF1 %.4f | val ema mF1 %.4f dF1 %.4f | best %s | %.0fs",
@@ -246,6 +280,21 @@ def parse_args(argv=None):
     parser.add_argument("--subset", default=0, type=int)
     parser.add_argument("--final_eval", default=True, type=bool_flag)
     parser.add_argument("--final_eval_splits", nargs="+", default=["val", "test"])
+    # Phase 3: distillation (docs/PROJECT_BRIEF.md) and setting C
+    parser.add_argument("--teacher_ckpt", default="", help="teacher state dict (official or ours); empty = no KD")
+    parser.add_argument("--kd_T", default=2.0, type=float)
+    parser.add_argument("--kd_tau", default=0.8, type=float)
+    parser.add_argument("--lam_L", default=1.0, type=float)
+    parser.add_argument("--lam_U", default=1.0, type=float)
+    parser.add_argument("--debris_w", default=1.0, type=float)
+    parser.add_argument("--debris_w_max", default=4.0, type=float)
+    parser.add_argument("--kd_warmup_epochs", default=5, type=int)
+    parser.add_argument("--extra_debris_ce_weight", default=1.0, type=float, help="setting C; 1.0 = official")
+    parser.add_argument("--config", default="", help="YAML of train.py options (configs/settings/*.yaml); CLI wins")
+    pre, _ = parser.parse_known_args(argv)
+    if pre.config:
+        with open(pre.config) as f:
+            parser.set_defaults(**(yaml.safe_load(f) or {}))
     args = parser.parse_args(argv)
     options = vars(args)
     lr_steps = ast.literal_eval(options["lr_steps"])
