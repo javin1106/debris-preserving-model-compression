@@ -1,0 +1,321 @@
+run_id,ckpt,split,mode,class,precision,recall,f1,iou,support
+p1-A-ckpt1-envorig-20261015-0556,1,val,single,Marine Debris,51.6758,72.9776,60.5066,43.376,1162
+p1-A-ckpt1-envorig-20261015-0556,1,val,single,Dense Sargassum,100.0,64.2674,78.2473,64.2674,1167
+p1-A-ckpt1-envorig-20261015-0556,1,val,single,Sparse Floating Algae,53.0501,77.6715,63.0421,46.0302,627
+p1-A-ckpt1-envorig-20261015-0556,1,val,single,Natural Organic Material,22.7273,26.3158,24.3902,13.8889,95
+p1-A-ckpt1-envorig-20261015-0556,1,val,single,Ship,55.4465,43.8235,48.9546,32.4105,3740
+p1-A-ckpt1-envorig-20261015-0556,1,val,single,Oil Spill,95.8628,45.6802,61.8757,44.7971,42456
+p1-A-ckpt1-envorig-20261015-0556,1,val,single,Marine Water,76.3969,98.5568,86.0735,75.5517,92294
+p1-A-ckpt1-envorig-20261015-0556,1,val,single,Sediment-Laden Water,99.9975,95.5234,97.7093,95.5212,125565
+p1-A-ckpt1-envorig-20261015-0556,1,val,single,Foam,93.4473,88.8889,91.1111,83.6735,369
+p1-A-ckpt1-envorig-20261015-0556,1,val,single,Turbid Water,84.2327,97.231,90.2663,82.2595,39076
+p1-A-ckpt1-envorig-20261015-0556,1,val,single,Shallow Water,99.5064,90.6794,94.8881,90.2734,40019
+p1-A-ckpt1-envorig-20261015-0556,1,val,single,Waves & Wakes,61.2104,48.8244,54.3203,37.2875,3998
+p1-A-ckpt1-envorig-20261015-0556,1,val,single,Oil Platform,58.2253,73.2603,64.8832,48.0201,3923
+p1-A-ckpt1-envorig-20261015-0556,1,val,single,Jellyfish,99.8162,58.5129,73.7772,58.4499,928
+p1-A-ckpt1-envorig-20261015-0556,1,val,single,Sea snot,100.0,70.6144,82.7766,70.6144,2702
+p1-A-ckpt1-envorig-20261015-0556,1,val,single,_macro,76.773,70.1885,71.5215,59.0947,358121
+p1-A-ckpt1-envorig-20261015-0556,1,val,tta,Marine Debris,56.0453,76.5921,64.7273,47.8495,1162
+p1-A-ckpt1-envorig-20261015-0556,1,val,tta,Dense Sargassum,100.0,61.0111,75.785,61.0111,1167
+p1-A-ckpt1-envorig-20261015-0556,1,val,tta,Sparse Floating Algae,52.2936,81.8182,63.806,46.8493,627
+p1-A-ckpt1-envorig-20261015-0556,1,val,tta,Natural Organic Material,12.3457,10.5263,11.3636,6.0241,95
+p1-A-ckpt1-envorig-20261015-0556,1,val,tta,Ship,54.218,44.6791,48.9886,32.4403,3740
+p1-A-ckpt1-envorig-20261015-0556,1,val,tta,Oil Spill,96.145,48.4643,64.444,47.5405,42456
+p1-A-ckpt1-envorig-20261015-0556,1,val,tta,Marine Water,76.9818,98.6532,86.4805,76.1812,92294
+p1-A-ckpt1-envorig-20261015-0556,1,val,tta,Sediment-Laden Water,100.0,98.3427,99.1644,98.3427,125565
+p1-A-ckpt1-envorig-20261015-0556,1,val,tta,Foam,91.2329,90.2439,90.7357,83.0424,369
+p1-A-ckpt1-envorig-20261015-0556,1,val,tta,Turbid Water,90.2347,96.4326,93.2307,87.3198,39076
+p1-A-ckpt1-envorig-20261015-0556,1,val,tta,Shallow Water,98.7195,89.1926,93.7146,88.1725,40019
+p1-A-ckpt1-envorig-20261015-0556,1,val,tta,Waves & Wakes,63.2102,44.5223,52.2454,35.3596,3998
+p1-A-ckpt1-envorig-20261015-0556,1,val,tta,Oil Platform,58.6228,73.1328,65.0788,48.2347,3923
+p1-A-ckpt1-envorig-20261015-0556,1,val,tta,Jellyfish,100.0,70.9052,82.976,70.9052,928
+p1-A-ckpt1-envorig-20261015-0556,1,val,tta,Sea snot,100.0,69.06,81.6988,69.06,2702
+p1-A-ckpt1-envorig-20261015-0556,1,val,tta,_macro,76.67,70.2384,71.6293,59.8889,358121
+p1-A-ckpt1-envorig-20261015-0556,1,test,single,Marine Debris,33.9791,66.7009,45.0225,29.051,973
+p1-A-ckpt1-envorig-20261015-0556,1,test,single,Dense Sargassum,99.2625,51.65,67.9455,51.4526,1303
+p1-A-ckpt1-envorig-20261015-0556,1,test,single,Sparse Floating Algae,70.8676,86.8981,78.0684,64.0264,1786
+p1-A-ckpt1-envorig-20261015-0556,1,test,single,Natural Organic Material,82.1429,74.4604,78.1132,64.0867,278
+p1-A-ckpt1-envorig-20261015-0556,1,test,single,Ship,77.0784,54.4768,63.8361,46.8818,3574
+p1-A-ckpt1-envorig-20261015-0556,1,test,single,Oil Spill,81.1578,70.4918,75.4497,60.5777,51528
+p1-A-ckpt1-envorig-20261015-0556,1,test,single,Marine Water,85.0327,92.0797,88.416,79.2372,139465
+p1-A-ckpt1-envorig-20261015-0556,1,test,single,Sediment-Laden Water,99.8866,91.639,95.5852,91.5437,93254
+p1-A-ckpt1-envorig-20261015-0556,1,test,single,Foam,93.5484,74.9354,83.2138,71.2531,387
+p1-A-ckpt1-envorig-20261015-0556,1,test,single,Turbid Water,77.4089,93.4476,84.6755,73.4236,42168
+p1-A-ckpt1-envorig-20261015-0556,1,test,single,Shallow Water,69.2483,52.5997,59.7866,42.6398,12732
+p1-A-ckpt1-envorig-20261015-0556,1,test,single,Waves & Wakes,49.8868,30.9952,38.2347,23.6359,6401
+p1-A-ckpt1-envorig-20261015-0556,1,test,single,Oil Platform,76.7304,94.6555,84.7556,73.5442,4790
+p1-A-ckpt1-envorig-20261015-0556,1,test,single,Jellyfish,100.0,81.7518,89.9598,81.7518,274
+p1-A-ckpt1-envorig-20261015-0556,1,test,single,Sea snot,98.336,55.5506,70.9954,55.0333,2234
+p1-A-ckpt1-envorig-20261015-0556,1,test,single,_macro,79.6378,71.4888,73.6039,60.5426,361147
+p1-A-ckpt1-envorig-20261015-0556,1,test,tta,Marine Debris,36.3687,67.3176,47.2242,30.9108,973
+p1-A-ckpt1-envorig-20261015-0556,1,test,tta,Dense Sargassum,99.4587,56.4083,71.9882,56.2357,1303
+p1-A-ckpt1-envorig-20261015-0556,1,test,tta,Sparse Floating Algae,73.9738,91.8253,81.9385,69.4033,1786
+p1-A-ckpt1-envorig-20261015-0556,1,test,tta,Natural Organic Material,85.9155,65.8273,74.5418,59.4156,278
+p1-A-ckpt1-envorig-20261015-0556,1,test,tta,Ship,80.0082,54.5327,64.8586,47.9931,3574
+p1-A-ckpt1-envorig-20261015-0556,1,test,tta,Oil Spill,90.2226,74.0316,81.3291,68.5333,51528
+p1-A-ckpt1-envorig-20261015-0556,1,test,tta,Marine Water,86.2024,95.3422,90.5423,82.7189,139465
+p1-A-ckpt1-envorig-20261015-0556,1,test,tta,Sediment-Laden Water,99.8523,96.4162,98.1042,96.2789,93254
+p1-A-ckpt1-envorig-20261015-0556,1,test,tta,Foam,99.0712,82.6873,90.1408,82.0513,387
+p1-A-ckpt1-envorig-20261015-0556,1,test,tta,Turbid Water,85.519,96.1582,90.5271,82.6936,42168
+p1-A-ckpt1-envorig-20261015-0556,1,test,tta,Shallow Water,82.0016,58.1134,68.0211,51.5394,12732
+p1-A-ckpt1-envorig-20261015-0556,1,test,tta,Waves & Wakes,59.5625,28.0737,38.161,23.5796,6401
+p1-A-ckpt1-envorig-20261015-0556,1,test,tta,Oil Platform,76.7446,94.5929,84.7391,73.5194,4790
+p1-A-ckpt1-envorig-20261015-0556,1,test,tta,Jellyfish,100.0,91.2409,95.4198,91.2409,274
+p1-A-ckpt1-envorig-20261015-0556,1,test,tta,Sea snot,100.0,55.1477,71.0906,55.1477,2234
+p1-A-ckpt1-envorig-20261015-0556,1,test,tta,_macro,83.6601,73.8477,76.5751,64.7508,361147
+p1-A-ckpt2-envorig-20261015-0557,2,val,single,Marine Debris,54.4312,74.5267,62.9132,45.893,1162
+p1-A-ckpt2-envorig-20261015-0557,2,val,single,Dense Sargassum,99.6753,78.9203,88.0918,78.7179,1167
+p1-A-ckpt2-envorig-20261015-0557,2,val,single,Sparse Floating Algae,53.949,70.8134,61.2414,44.1352,627
+p1-A-ckpt2-envorig-20261015-0557,2,val,single,Natural Organic Material,81.8182,18.9474,30.7692,18.1818,95
+p1-A-ckpt2-envorig-20261015-0557,2,val,single,Ship,51.918,47.4064,49.5597,32.9431,3740
+p1-A-ckpt2-envorig-20261015-0557,2,val,single,Oil Spill,96.3464,56.6469,71.3459,55.4556,42456
+p1-A-ckpt2-envorig-20261015-0557,2,val,single,Marine Water,79.4697,98.6608,88.0315,78.6216,92294
+p1-A-ckpt2-envorig-20261015-0557,2,val,single,Sediment-Laden Water,100.0,100.0,100.0,100.0,125565
+p1-A-ckpt2-envorig-20261015-0557,2,val,single,Foam,96.9789,86.9919,91.7143,84.6966,369
+p1-A-ckpt2-envorig-20261015-0557,2,val,single,Turbid Water,96.1702,95.8798,96.0248,92.3536,39076
+p1-A-ckpt2-envorig-20261015-0557,2,val,single,Shallow Water,98.3346,90.592,94.3046,89.223,40019
+p1-A-ckpt2-envorig-20261015-0557,2,val,single,Waves & Wakes,60.4282,40.9455,48.8147,32.288,3998
+p1-A-ckpt2-envorig-20261015-0557,2,val,single,Oil Platform,57.8745,65.1032,61.2764,44.1716,3923
+p1-A-ckpt2-envorig-20261015-0557,2,val,single,Jellyfish,100.0,92.3491,96.0224,92.3491,928
+p1-A-ckpt2-envorig-20261015-0557,2,val,single,Sea snot,99.1433,77.091,86.7375,76.5809,2702
+p1-A-ckpt2-envorig-20261015-0557,2,val,single,_macro,81.7692,72.9916,75.1232,64.3741,358121
+p1-A-ckpt2-envorig-20261015-0557,2,val,tta,Marine Debris,57.6923,77.4527,66.1278,49.3963,1162
+p1-A-ckpt2-envorig-20261015-0557,2,val,tta,Dense Sargassum,99.6753,78.9203,88.0918,78.7179,1167
+p1-A-ckpt2-envorig-20261015-0557,2,val,tta,Sparse Floating Algae,54.9941,74.6411,63.3288,46.3366,627
+p1-A-ckpt2-envorig-20261015-0557,2,val,tta,Natural Organic Material,66.6667,4.2105,7.9208,4.1237,95
+p1-A-ckpt2-envorig-20261015-0557,2,val,tta,Ship,48.4767,43.3957,45.7957,29.6981,3740
+p1-A-ckpt2-envorig-20261015-0557,2,val,tta,Oil Spill,96.5444,56.9225,71.6187,55.7859,42456
+p1-A-ckpt2-envorig-20261015-0557,2,val,tta,Marine Water,79.5866,98.9198,88.2063,78.9009,92294
+p1-A-ckpt2-envorig-20261015-0557,2,val,tta,Sediment-Laden Water,100.0,99.9992,99.9996,99.9992,125565
+p1-A-ckpt2-envorig-20261015-0557,2,val,tta,Foam,98.8439,92.6829,95.6643,91.689,369
+p1-A-ckpt2-envorig-20261015-0557,2,val,tta,Turbid Water,97.2075,95.7647,96.4807,93.2007,39076
+p1-A-ckpt2-envorig-20261015-0557,2,val,tta,Shallow Water,98.2474,91.7514,94.8884,90.2739,40019
+p1-A-ckpt2-envorig-20261015-0557,2,val,tta,Waves & Wakes,63.4701,39.0695,48.3666,31.8971,3998
+p1-A-ckpt2-envorig-20261015-0557,2,val,tta,Oil Platform,54.8778,62.3757,58.387,41.23,3923
+p1-A-ckpt2-envorig-20261015-0557,2,val,tta,Jellyfish,100.0,99.569,99.784,99.569,928
+p1-A-ckpt2-envorig-20261015-0557,2,val,tta,Sea snot,99.9515,76.3138,86.5477,76.2856,2702
+p1-A-ckpt2-envorig-20261015-0557,2,val,tta,_macro,81.0823,72.7993,74.0806,64.4736,358121
+p1-A-ckpt2-envorig-20261015-0557,2,test,single,Marine Debris,39.4558,71.5313,50.8586,34.1009,973
+p1-A-ckpt2-envorig-20261015-0557,2,test,single,Dense Sargassum,92.215,76.3622,83.5432,71.7376,1303
+p1-A-ckpt2-envorig-20261015-0557,2,test,single,Sparse Floating Algae,78.902,82.0829,80.461,67.3095,1786
+p1-A-ckpt2-envorig-20261015-0557,2,test,single,Natural Organic Material,82.4,37.0504,51.1166,34.3333,278
+p1-A-ckpt2-envorig-20261015-0557,2,test,single,Ship,74.0035,47.7896,58.0755,40.92,3574
+p1-A-ckpt2-envorig-20261015-0557,2,test,single,Oil Spill,81.9764,69.6612,75.3187,60.409,51528
+p1-A-ckpt2-envorig-20261015-0557,2,test,single,Marine Water,86.0156,94.1864,89.9157,81.679,139465
+p1-A-ckpt2-envorig-20261015-0557,2,test,single,Sediment-Laden Water,99.6495,100.0,99.8244,99.6495,93254
+p1-A-ckpt2-envorig-20261015-0557,2,test,single,Foam,48.7805,72.3514,58.2726,41.116,387
+p1-A-ckpt2-envorig-20261015-0557,2,test,single,Turbid Water,94.6589,83.5539,88.7604,79.7921,42168
+p1-A-ckpt2-envorig-20261015-0557,2,test,single,Shallow Water,55.8215,63.3757,59.3593,42.2063,12732
+p1-A-ckpt2-envorig-20261015-0557,2,test,single,Waves & Wakes,54.1881,31.2295,39.6234,24.7065,6401
+p1-A-ckpt2-envorig-20261015-0557,2,test,single,Oil Platform,74.0181,94.0292,82.8322,70.6953,4790
+p1-A-ckpt2-envorig-20261015-0557,2,test,single,Jellyfish,75.5952,46.3504,57.4661,40.3175,274
+p1-A-ckpt2-envorig-20261015-0557,2,test,single,Sea snot,97.2398,75.6938,85.1246,74.1017,2234
+p1-A-ckpt2-envorig-20261015-0557,2,test,single,_macro,75.6613,69.6832,70.7035,57.5383,361147
+p1-A-ckpt2-envorig-20261015-0557,2,test,tta,Marine Debris,40.189,74.3063,52.1645,35.2855,973
+p1-A-ckpt2-envorig-20261015-0557,2,test,tta,Dense Sargassum,93.8517,79.6623,86.1768,75.7112,1303
+p1-A-ckpt2-envorig-20261015-0557,2,test,tta,Sparse Floating Algae,82.1018,83.9866,83.0335,70.9891,1786
+p1-A-ckpt2-envorig-20261015-0557,2,test,tta,Natural Organic Material,81.0127,23.0216,35.8543,21.843,278
+p1-A-ckpt2-envorig-20261015-0557,2,test,tta,Ship,78.2723,50.1959,61.166,44.057,3574
+p1-A-ckpt2-envorig-20261015-0557,2,test,tta,Oil Spill,80.8535,72.3645,76.3738,61.7781,51528
+p1-A-ckpt2-envorig-20261015-0557,2,test,tta,Marine Water,87.0675,93.9885,90.3957,82.4746,139465
+p1-A-ckpt2-envorig-20261015-0557,2,test,tta,Sediment-Laden Water,99.7572,100.0,99.8784,99.7572,93254
+p1-A-ckpt2-envorig-20261015-0557,2,test,tta,Foam,97.6974,76.7442,85.9624,75.3807,387
+p1-A-ckpt2-envorig-20261015-0557,2,test,tta,Turbid Water,96.256,83.2219,89.2656,80.6124,42168
+p1-A-ckpt2-envorig-20261015-0557,2,test,tta,Shallow Water,58.755,74.4266,65.6687,48.8857,12732
+p1-A-ckpt2-envorig-20261015-0557,2,test,tta,Waves & Wakes,59.9175,27.2301,37.4436,23.0342,6401
+p1-A-ckpt2-envorig-20261015-0557,2,test,tta,Oil Platform,75.2697,96.1378,84.4334,73.0604,4790
+p1-A-ckpt2-envorig-20261015-0557,2,test,tta,Jellyfish,87.3016,80.292,83.6502,71.8954,274
+p1-A-ckpt2-envorig-20261015-0557,2,test,tta,Sea snot,98.3188,75.9176,85.6782,74.9448,2234
+p1-A-ckpt2-envorig-20261015-0557,2,test,tta,_macro,81.1081,72.7664,74.4764,62.6473,361147
+p1-A-ckpt3-envorig-20261015-0557,3,val,single,Marine Debris,57.8625,73.1497,64.6142,47.726,1162
+p1-A-ckpt3-envorig-20261015-0557,3,val,single,Dense Sargassum,100.0,59.383,74.5161,59.383,1167
+p1-A-ckpt3-envorig-20261015-0557,3,val,single,Sparse Floating Algae,50.0,86.4434,63.3548,46.3644,627
+p1-A-ckpt3-envorig-20261015-0557,3,val,single,Natural Organic Material,15.3846,2.1053,3.7037,1.8868,95
+p1-A-ckpt3-envorig-20261015-0557,3,val,single,Ship,52.9125,52.2193,52.5636,35.6517,3740
+p1-A-ckpt3-envorig-20261015-0557,3,val,single,Oil Spill,97.076,50.0471,66.045,49.3039,42456
+p1-A-ckpt3-envorig-20261015-0557,3,val,single,Marine Water,77.575,98.7973,86.9094,76.8493,92294
+p1-A-ckpt3-envorig-20261015-0557,3,val,single,Sediment-Laden Water,100.0,99.7834,99.8916,99.7834,125565
+p1-A-ckpt3-envorig-20261015-0557,3,val,single,Foam,79.8122,92.1409,85.5346,74.7253,369
+p1-A-ckpt3-envorig-20261015-0557,3,val,single,Turbid Water,91.8014,95.908,93.8098,88.3412,39076
+p1-A-ckpt3-envorig-20261015-0557,3,val,single,Shallow Water,97.7989,85.9367,91.4849,84.3061,40019
+p1-A-ckpt3-envorig-20261015-0557,3,val,single,Waves & Wakes,62.6829,44.9975,52.3879,35.4902,3998
+p1-A-ckpt3-envorig-20261015-0557,3,val,single,Oil Platform,59.7435,61.7385,60.7246,43.6004,3923
+p1-A-ckpt3-envorig-20261015-0557,3,val,single,Jellyfish,99.3251,95.1509,97.1932,94.5396,928
+p1-A-ckpt3-envorig-20261015-0557,3,val,single,Sea snot,99.5493,81.7543,89.7785,81.4528,2702
+p1-A-ckpt3-envorig-20261015-0557,3,val,single,_macro,76.1016,71.9703,72.1674,61.2936,358121
+p1-A-ckpt3-envorig-20261015-0557,3,val,tta,Marine Debris,56.9872,76.506,65.3196,48.4997,1162
+p1-A-ckpt3-envorig-20261015-0557,3,val,tta,Dense Sargassum,100.0,61.6967,76.3116,61.6967,1167
+p1-A-ckpt3-envorig-20261015-0557,3,val,tta,Sparse Floating Algae,50.3343,84.051,62.963,45.9459,627
+p1-A-ckpt3-envorig-20261015-0557,3,val,tta,Natural Organic Material,0.0,0.0,0.0,0.0,95
+p1-A-ckpt3-envorig-20261015-0557,3,val,tta,Ship,51.9423,52.9144,52.4238,35.5232,3740
+p1-A-ckpt3-envorig-20261015-0557,3,val,tta,Oil Spill,97.9138,51.8466,67.7949,51.2801,42456
+p1-A-ckpt3-envorig-20261015-0557,3,val,tta,Marine Water,77.9118,98.9696,87.1872,77.2849,92294
+p1-A-ckpt3-envorig-20261015-0557,3,val,tta,Sediment-Laden Water,100.0,99.9833,99.9916,99.9833,125565
+p1-A-ckpt3-envorig-20261015-0557,3,val,tta,Foam,81.0427,92.6829,86.4728,76.1693,369
+p1-A-ckpt3-envorig-20261015-0557,3,val,tta,Turbid Water,90.9697,95.7467,93.2971,87.4363,39076
+p1-A-ckpt3-envorig-20261015-0557,3,val,tta,Shallow Water,97.9821,84.6898,90.8523,83.238,40019
+p1-A-ckpt3-envorig-20261015-0557,3,val,tta,Waves & Wakes,64.7563,41.5458,50.6171,33.8841,3998
+p1-A-ckpt3-envorig-20261015-0557,3,val,tta,Oil Platform,58.3992,58.3992,58.3992,41.2421,3923
+p1-A-ckpt3-envorig-20261015-0557,3,val,tta,Jellyfish,100.0,96.444,98.1898,96.444,928
+p1-A-ckpt3-envorig-20261015-0557,3,val,tta,Sea snot,99.6347,80.755,89.2069,80.5166,2702
+p1-A-ckpt3-envorig-20261015-0557,3,val,tta,_macro,75.1916,71.7487,71.9351,61.2763,358121
+p1-A-ckpt3-envorig-20261015-0557,3,test,single,Marine Debris,32.9341,67.8314,44.3399,28.4851,973
+p1-A-ckpt3-envorig-20261015-0557,3,test,single,Dense Sargassum,96.4989,67.6899,79.567,66.0674,1303
+p1-A-ckpt3-envorig-20261015-0557,3,test,single,Sparse Floating Algae,77.1496,90.9295,83.4747,71.6365,1786
+p1-A-ckpt3-envorig-20261015-0557,3,test,single,Natural Organic Material,87.1795,61.1511,71.8816,56.1056,278
+p1-A-ckpt3-envorig-20261015-0557,3,test,single,Ship,72.5336,54.3089,62.112,45.0453,3574
+p1-A-ckpt3-envorig-20261015-0557,3,test,single,Oil Spill,95.5363,59.8121,73.5666,58.1861,51528
+p1-A-ckpt3-envorig-20261015-0557,3,test,single,Marine Water,82.7724,97.5808,89.5686,81.1079,139465
+p1-A-ckpt3-envorig-20261015-0557,3,test,single,Sediment-Laden Water,99.9689,100.0,99.9845,99.9689,93254
+p1-A-ckpt3-envorig-20261015-0557,3,test,single,Foam,85.3786,84.4961,84.9351,73.8149,387
+p1-A-ckpt3-envorig-20261015-0557,3,test,single,Turbid Water,91.3065,89.9402,90.6182,82.8458,42168
+p1-A-ckpt3-envorig-20261015-0557,3,test,single,Shallow Water,66.1525,48.5077,55.9724,38.8623,12732
+p1-A-ckpt3-envorig-20261015-0557,3,test,single,Waves & Wakes,42.8512,32.12,36.7176,22.4871,6401
+p1-A-ckpt3-envorig-20261015-0557,3,test,single,Oil Platform,76.6275,89.9374,82.7507,70.5767,4790
+p1-A-ckpt3-envorig-20261015-0557,3,test,single,Jellyfish,96.5686,71.8978,82.4268,70.1068,274
+p1-A-ckpt3-envorig-20261015-0557,3,test,single,Sea snot,98.4441,62.3098,76.3158,61.7021,2234
+p1-A-ckpt3-envorig-20261015-0557,3,test,single,_macro,80.1268,71.9008,74.2821,61.7999,361147
+p1-A-ckpt3-envorig-20261015-0557,3,test,tta,Marine Debris,37.6045,69.3731,48.7717,32.2504,973
+p1-A-ckpt3-envorig-20261015-0557,3,test,tta,Dense Sargassum,98.3773,74.4436,84.7532,73.5406,1303
+p1-A-ckpt3-envorig-20261015-0557,3,test,tta,Sparse Floating Algae,81.8226,93.505,87.2746,77.4223,1786
+p1-A-ckpt3-envorig-20261015-0557,3,test,tta,Natural Organic Material,91.9643,74.1007,82.0717,69.5946,278
+p1-A-ckpt3-envorig-20261015-0557,3,test,tta,Ship,77.7471,55.2322,64.5837,47.6927,3574
+p1-A-ckpt3-envorig-20261015-0557,3,test,tta,Oil Spill,96.28,65.6478,78.0665,64.0238,51528
+p1-A-ckpt3-envorig-20261015-0557,3,test,tta,Marine Water,84.3681,98.0246,90.6851,82.9576,139465
+p1-A-ckpt3-envorig-20261015-0557,3,test,tta,Sediment-Laden Water,99.9711,99.9979,99.9845,99.9689,93254
+p1-A-ckpt3-envorig-20261015-0557,3,test,tta,Foam,92.3483,90.4393,91.3838,84.1346,387
+p1-A-ckpt3-envorig-20261015-0557,3,test,tta,Turbid Water,91.5441,89.3189,90.4178,82.5114,42168
+p1-A-ckpt3-envorig-20261015-0557,3,test,tta,Shallow Water,69.5546,51.5159,59.1914,42.0368,12732
+p1-A-ckpt3-envorig-20261015-0557,3,test,tta,Waves & Wakes,39.3108,28.8705,33.2913,19.9697,6401
+p1-A-ckpt3-envorig-20261015-0557,3,test,tta,Oil Platform,77.5645,92.8184,84.5086,73.1731,4790
+p1-A-ckpt3-envorig-20261015-0557,3,test,tta,Jellyfish,93.75,82.1168,87.5486,77.8547,274
+p1-A-ckpt3-envorig-20261015-0557,3,test,tta,Sea snot,99.7305,66.2489,79.6127,66.1305,2234
+p1-A-ckpt3-envorig-20261015-0557,3,test,tta,_macro,82.1292,75.4436,77.4763,66.2175,361147
+p1-A-ckpt4-envorig-20261015-0557,4,val,single,Marine Debris,51.9771,78.0551,62.4011,45.35,1162
+p1-A-ckpt4-envorig-20261015-0557,4,val,single,Dense Sargassum,99.2424,67.3522,80.245,67.0077,1167
+p1-A-ckpt4-envorig-20261015-0557,4,val,single,Sparse Floating Algae,50.4122,68.2616,57.9946,40.8397,627
+p1-A-ckpt4-envorig-20261015-0557,4,val,single,Natural Organic Material,0.0,0.0,0.0,0.0,95
+p1-A-ckpt4-envorig-20261015-0557,4,val,single,Ship,57.5563,43.0749,49.2736,32.6907,3740
+p1-A-ckpt4-envorig-20261015-0557,4,val,single,Oil Spill,96.9458,53.0078,68.5397,52.1371,42456
+p1-A-ckpt4-envorig-20261015-0557,4,val,single,Marine Water,78.663,98.4809,87.4634,77.72,92294
+p1-A-ckpt4-envorig-20261015-0557,4,val,single,Sediment-Laden Water,100.0,99.8383,99.9191,99.8383,125565
+p1-A-ckpt4-envorig-20261015-0557,4,val,single,Foam,87.6374,86.4499,87.0396,77.0531,369
+p1-A-ckpt4-envorig-20261015-0557,4,val,single,Turbid Water,91.5672,95.3962,93.4425,87.692,39076
+p1-A-ckpt4-envorig-20261015-0557,4,val,single,Shallow Water,98.5095,88.518,93.2468,87.348,40019
+p1-A-ckpt4-envorig-20261015-0557,4,val,single,Waves & Wakes,60.2654,43.1716,50.306,33.6059,3998
+p1-A-ckpt4-envorig-20261015-0557,4,val,single,Oil Platform,59.4347,72.9034,65.4837,48.6809,3923
+p1-A-ckpt4-envorig-20261015-0557,4,val,single,Jellyfish,93.7358,88.6853,91.1406,83.7233,928
+p1-A-ckpt4-envorig-20261015-0557,4,val,single,Sea snot,98.2656,79.6817,88.0033,78.5766,2702
+p1-A-ckpt4-envorig-20261015-0557,4,val,single,_macro,74.9475,70.8585,71.6333,60.8176,358121
+p1-A-ckpt4-envorig-20261015-0557,4,val,tta,Marine Debris,57.5385,80.4647,67.0972,50.486,1162
+p1-A-ckpt4-envorig-20261015-0557,4,val,tta,Dense Sargassum,99.7546,69.6658,82.0383,69.5466,1167
+p1-A-ckpt4-envorig-20261015-0557,4,val,tta,Sparse Floating Algae,53.5506,73.3652,61.9112,44.8343,627
+p1-A-ckpt4-envorig-20261015-0557,4,val,tta,Natural Organic Material,0.0,0.0,0.0,0.0,95
+p1-A-ckpt4-envorig-20261015-0557,4,val,tta,Ship,52.2373,40.2674,45.4779,29.4313,3740
+p1-A-ckpt4-envorig-20261015-0557,4,val,tta,Oil Spill,97.5242,53.2551,68.8909,52.5447,42456
+p1-A-ckpt4-envorig-20261015-0557,4,val,tta,Marine Water,78.6042,98.5904,87.4701,77.7306,92294
+p1-A-ckpt4-envorig-20261015-0557,4,val,tta,Sediment-Laden Water,100.0,99.7969,99.8984,99.7969,125565
+p1-A-ckpt4-envorig-20261015-0557,4,val,tta,Foam,88.3721,92.6829,90.4762,82.6087,369
+p1-A-ckpt4-envorig-20261015-0557,4,val,tta,Turbid Water,93.4578,96.0743,94.748,90.0201,39076
+p1-A-ckpt4-envorig-20261015-0557,4,val,tta,Shallow Water,98.4966,89.7149,93.9009,88.503,40019
+p1-A-ckpt4-envorig-20261015-0557,4,val,tta,Waves & Wakes,59.658,38.3942,46.7204,30.4805,3998
+p1-A-ckpt4-envorig-20261015-0557,4,val,tta,Oil Platform,56.2728,70.8896,62.7411,45.7101,3923
+p1-A-ckpt4-envorig-20261015-0557,4,val,tta,Jellyfish,100.0,96.2284,98.078,96.2284,928
+p1-A-ckpt4-envorig-20261015-0557,4,val,tta,Sea snot,98.6067,81.1991,89.0603,80.2781,2702
+p1-A-ckpt4-envorig-20261015-0557,4,val,tta,_macro,75.6049,72.0393,72.5673,62.5466,358121
+p1-A-ckpt4-envorig-20261015-0557,4,test,single,Marine Debris,34.7044,69.3731,46.2646,30.0936,973
+p1-A-ckpt4-envorig-20261015-0557,4,test,single,Dense Sargassum,98.7788,55.8711,71.3725,55.4878,1303
+p1-A-ckpt4-envorig-20261015-0557,4,test,single,Sparse Floating Algae,71.6114,84.6025,77.5667,63.3543,1786
+p1-A-ckpt4-envorig-20261015-0557,4,test,single,Natural Organic Material,65.0718,48.9209,55.8522,38.7464,278
+p1-A-ckpt4-envorig-20261015-0557,4,test,single,Ship,71.7982,46.5865,56.5077,39.3803,3574
+p1-A-ckpt4-envorig-20261015-0557,4,test,single,Oil Spill,95.0619,62.2419,75.2281,60.2925,51528
+p1-A-ckpt4-envorig-20261015-0557,4,test,single,Marine Water,84.8216,96.5676,90.3143,82.3391,139465
+p1-A-ckpt4-envorig-20261015-0557,4,test,single,Sediment-Laden Water,99.9303,99.9989,99.9646,99.9293,93254
+p1-A-ckpt4-envorig-20261015-0557,4,test,single,Foam,87.3646,62.5323,72.8916,57.346,387
+p1-A-ckpt4-envorig-20261015-0557,4,test,single,Turbid Water,89.3068,89.8193,89.5623,81.0976,42168
+p1-A-ckpt4-envorig-20261015-0557,4,test,single,Shallow Water,66.5216,69.6513,68.0505,51.5731,12732
+p1-A-ckpt4-envorig-20261015-0557,4,test,single,Waves & Wakes,57.9109,35.3382,43.8925,28.1168,6401
+p1-A-ckpt4-envorig-20261015-0557,4,test,single,Oil Platform,73.3774,95.1148,82.8439,70.7124,4790
+p1-A-ckpt4-envorig-20261015-0557,4,test,single,Jellyfish,87.5676,59.1241,70.5882,54.5455,274
+p1-A-ckpt4-envorig-20261015-0557,4,test,single,Sea snot,97.4328,73.0528,83.4996,71.6733,2234
+p1-A-ckpt4-envorig-20261015-0557,4,test,single,_macro,78.7507,69.9197,72.2933,58.9792,361147
+p1-A-ckpt4-envorig-20261015-0557,4,test,tta,Marine Debris,38.7766,72.9702,50.6419,33.9064,973
+p1-A-ckpt4-envorig-20261015-0557,4,test,tta,Dense Sargassum,98.7261,71.3738,82.8508,70.7224,1303
+p1-A-ckpt4-envorig-20261015-0557,4,test,tta,Sparse Floating Algae,80.3982,88.1859,84.1121,72.5806,1786
+p1-A-ckpt4-envorig-20261015-0557,4,test,tta,Natural Organic Material,85.4305,46.4029,60.1399,43.0,278
+p1-A-ckpt4-envorig-20261015-0557,4,test,tta,Ship,78.1486,49.1326,60.3333,43.198,3574
+p1-A-ckpt4-envorig-20261015-0557,4,test,tta,Oil Spill,94.3109,65.4052,77.2424,62.9226,51528
+p1-A-ckpt4-envorig-20261015-0557,4,test,tta,Marine Water,85.5531,97.0839,90.9545,83.4096,139465
+p1-A-ckpt4-envorig-20261015-0557,4,test,tta,Sediment-Laden Water,99.9678,99.9989,99.9834,99.9668,93254
+p1-A-ckpt4-envorig-20261015-0557,4,test,tta,Foam,97.4359,78.553,86.9814,76.962,387
+p1-A-ckpt4-envorig-20261015-0557,4,test,tta,Turbid Water,91.098,94.4033,92.7212,86.4302,42168
+p1-A-ckpt4-envorig-20261015-0557,4,test,tta,Shallow Water,77.2585,69.8555,73.3707,57.9414,12732
+p1-A-ckpt4-envorig-20261015-0557,4,test,tta,Waves & Wakes,62.8451,30.2297,40.8228,25.6461,6401
+p1-A-ckpt4-envorig-20261015-0557,4,test,tta,Oil Platform,74.1649,95.9499,83.6625,71.9136,4790
+p1-A-ckpt4-envorig-20261015-0557,4,test,tta,Jellyfish,100.0,82.8467,90.6188,82.8467,274
+p1-A-ckpt4-envorig-20261015-0557,4,test,tta,Sea snot,98.4229,75.4252,85.4029,74.5245,2234
+p1-A-ckpt4-envorig-20261015-0557,4,test,tta,_macro,84.1691,74.5211,77.3226,65.7314,361147
+p1-A-ckpt5-envorig-20261015-0557,5,val,single,Marine Debris,64.4825,74.5267,69.1417,52.8371,1162
+p1-A-ckpt5-envorig-20261015-0557,5,val,single,Dense Sargassum,100.0,76.8638,86.9186,76.8638,1167
+p1-A-ckpt5-envorig-20261015-0557,5,val,single,Sparse Floating Algae,59.8759,92.3445,72.6474,57.0443,627
+p1-A-ckpt5-envorig-20261015-0557,5,val,single,Natural Organic Material,15.7895,3.1579,5.2632,2.7027,95
+p1-A-ckpt5-envorig-20261015-0557,5,val,single,Ship,52.9412,39.2246,45.0622,29.0841,3740
+p1-A-ckpt5-envorig-20261015-0557,5,val,single,Oil Spill,95.9916,53.811,68.9628,52.6284,42456
+p1-A-ckpt5-envorig-20261015-0557,5,val,single,Marine Water,73.547,98.1028,84.0685,72.5156,92294
+p1-A-ckpt5-envorig-20261015-0557,5,val,single,Sediment-Laden Water,100.0,99.9912,99.9956,99.9912,125565
+p1-A-ckpt5-envorig-20261015-0557,5,val,single,Foam,96.0452,92.1409,94.0526,88.7728,369
+p1-A-ckpt5-envorig-20261015-0557,5,val,single,Turbid Water,87.233,96.7653,91.7522,84.7613,39076
+p1-A-ckpt5-envorig-20261015-0557,5,val,single,Shallow Water,98.0619,61.3209,75.4566,60.5866,40019
+p1-A-ckpt5-envorig-20261015-0557,5,val,single,Waves & Wakes,47.9719,37.5688,42.1377,26.6927,3998
+p1-A-ckpt5-envorig-20261015-0557,5,val,single,Oil Platform,57.4271,72.8269,64.2167,47.2935,3923
+p1-A-ckpt5-envorig-20261015-0557,5,val,single,Jellyfish,100.0,76.5086,86.6911,76.5086,928
+p1-A-ckpt5-envorig-20261015-0557,5,val,single,Sea snot,100.0,78.4604,87.9303,78.4604,2702
+p1-A-ckpt5-envorig-20261015-0557,5,val,single,_macro,76.6245,70.241,71.6198,60.4495,358121
+p1-A-ckpt5-envorig-20261015-0557,5,val,tta,Marine Debris,68.5714,78.4854,73.1942,57.7215,1162
+p1-A-ckpt5-envorig-20261015-0557,5,val,tta,Dense Sargassum,100.0,56.2125,71.9693,56.2125,1167
+p1-A-ckpt5-envorig-20261015-0557,5,val,tta,Sparse Floating Algae,48.8391,93.9394,64.2662,47.3473,627
+p1-A-ckpt5-envorig-20261015-0557,5,val,tta,Natural Organic Material,0.0,0.0,0.0,0.0,95
+p1-A-ckpt5-envorig-20261015-0557,5,val,tta,Ship,52.9535,40.508,45.9021,29.7877,3740
+p1-A-ckpt5-envorig-20261015-0557,5,val,tta,Oil Spill,96.5236,55.3915,70.3891,54.308,42456
+p1-A-ckpt5-envorig-20261015-0557,5,val,tta,Marine Water,74.6592,98.2047,84.8284,73.6539,92294
+p1-A-ckpt5-envorig-20261015-0557,5,val,tta,Sediment-Laden Water,100.0,99.9912,99.9956,99.9912,125565
+p1-A-ckpt5-envorig-20261015-0557,5,val,tta,Foam,93.956,92.6829,93.3151,87.468,369
+p1-A-ckpt5-envorig-20261015-0557,5,val,tta,Turbid Water,88.9701,96.5657,92.6124,86.2413,39076
+p1-A-ckpt5-envorig-20261015-0557,5,val,tta,Shallow Water,98.0656,68.0252,80.3287,67.1245,40019
+p1-A-ckpt5-envorig-20261015-0557,5,val,tta,Waves & Wakes,59.0813,35.0675,44.0119,28.2149,3998
+p1-A-ckpt5-envorig-20261015-0557,5,val,tta,Oil Platform,57.0992,71.4504,63.4737,46.492,3923
+p1-A-ckpt5-envorig-20261015-0557,5,val,tta,Jellyfish,100.0,89.7629,94.6053,89.7629,928
+p1-A-ckpt5-envorig-20261015-0557,5,val,tta,Sea snot,99.6651,77.091,86.9366,76.8918,2702
+p1-A-ckpt5-envorig-20261015-0557,5,val,tta,_macro,75.8923,70.2252,71.0553,60.0812,358121
+p1-A-ckpt5-envorig-20261015-0557,5,test,single,Marine Debris,50.1626,63.4121,56.0145,38.9029,973
+p1-A-ckpt5-envorig-20261015-0557,5,test,single,Dense Sargassum,93.4004,64.0829,76.0127,61.3069,1303
+p1-A-ckpt5-envorig-20261015-0557,5,test,single,Sparse Floating Algae,74.5235,89.7536,81.4326,68.6804,1786
+p1-A-ckpt5-envorig-20261015-0557,5,test,single,Natural Organic Material,80.3571,32.3741,46.1538,30.0,278
+p1-A-ckpt5-envorig-20261015-0557,5,test,single,Ship,72.172,55.8758,62.9869,45.9715,3574
+p1-A-ckpt5-envorig-20261015-0557,5,test,single,Oil Spill,82.866,71.0604,76.5105,61.9571,51528
+p1-A-ckpt5-envorig-20261015-0557,5,test,single,Marine Water,86.6134,93.8802,90.1005,81.9845,139465
+p1-A-ckpt5-envorig-20261015-0557,5,test,single,Sediment-Laden Water,99.9164,99.9925,99.9544,99.9089,93254
+p1-A-ckpt5-envorig-20261015-0557,5,test,single,Foam,95.2555,67.4419,78.9713,65.25,387
+p1-A-ckpt5-envorig-20261015-0557,5,test,single,Turbid Water,87.783,86.153,86.9604,76.9291,42168
+p1-A-ckpt5-envorig-20261015-0557,5,test,single,Shallow Water,53.0832,53.5501,53.3156,36.3472,12732
+p1-A-ckpt5-envorig-20261015-0557,5,test,single,Waves & Wakes,58.583,29.3235,39.0838,24.2883,6401
+p1-A-ckpt5-envorig-20261015-0557,5,test,single,Oil Platform,76.6342,92.0251,83.6274,71.8618,4790
+p1-A-ckpt5-envorig-20261015-0557,5,test,single,Jellyfish,100.0,55.1095,71.0588,55.1095,274
+p1-A-ckpt5-envorig-20261015-0557,5,test,single,Sea snot,96.129,73.3662,83.2191,71.2609,2234
+p1-A-ckpt5-envorig-20261015-0557,5,test,single,_macro,80.4986,68.4934,72.3602,59.3173,361147
+p1-A-ckpt5-envorig-20261015-0557,5,test,tta,Marine Debris,50.1893,68.1398,57.803,40.6499,973
+p1-A-ckpt5-envorig-20261015-0557,5,test,tta,Dense Sargassum,98.011,68.0737,80.3442,67.1461,1303
+p1-A-ckpt5-envorig-20261015-0557,5,test,tta,Sparse Floating Algae,77.8651,94.3449,85.3165,74.3929,1786
+p1-A-ckpt5-envorig-20261015-0557,5,test,tta,Natural Organic Material,74.3902,21.9424,33.8889,20.4013,278
+p1-A-ckpt5-envorig-20261015-0557,5,test,tta,Ship,75.5229,54.5607,63.3528,46.3623,3574
+p1-A-ckpt5-envorig-20261015-0557,5,test,tta,Oil Spill,82.3683,75.4211,78.7418,64.9373,51528
+p1-A-ckpt5-envorig-20261015-0557,5,test,tta,Marine Water,87.6742,93.9827,90.7189,83.0143,139465
+p1-A-ckpt5-envorig-20261015-0557,5,test,tta,Sediment-Laden Water,99.97,99.9593,99.9646,99.9292,93254
+p1-A-ckpt5-envorig-20261015-0557,5,test,tta,Foam,88.3792,74.677,80.9524,68.0,387
+p1-A-ckpt5-envorig-20261015-0557,5,test,tta,Turbid Water,89.5539,86.0178,87.7502,78.1741,42168
+p1-A-ckpt5-envorig-20261015-0557,5,test,tta,Shallow Water,52.0824,52.0578,52.0701,35.1992,12732
+p1-A-ckpt5-envorig-20261015-0557,5,test,tta,Waves & Wakes,63.9368,27.8082,38.7588,24.0378,6401
+p1-A-ckpt5-envorig-20261015-0557,5,test,tta,Oil Platform,76.6251,93.7578,84.3301,72.9058,4790
+p1-A-ckpt5-envorig-20261015-0557,5,test,tta,Jellyfish,100.0,85.0365,91.9132,85.0365,274
+p1-A-ckpt5-envorig-20261015-0557,5,test,tta,Sea snot,97.2302,75.4252,84.9508,73.8387,2234
+p1-A-ckpt5-envorig-20261015-0557,5,test,tta,_macro,80.9199,71.4137,74.0571,62.2684,361147

@@ -1,7 +1,8 @@
 # STATUS
 
 ## Current phase
-**Phase 0 — Setup** → `docs/phases/phase-0-setup.md`
+**Phase 1 — Teacher reproduction (local) + port to H100** → `docs/phases/phase-1-teacher.md`
+(advanced on 2026-10-15 at the user's instruction: "do as u feel is okay, just do")
 
 (The user changes this line to move to the next phase. Claude Code never advances it on its own.)
 
@@ -20,13 +21,15 @@
 
 ## Open questions for the user
 - Confirm definition of setting C (Phase 2).
-- Before Phase 1c: add a `--seed` flag to our copy of `train.py`, and pick a model-selection rule (official script has none).
+- H100 SSH details (host, GPU count, how many parallel jobs, storage path) — needed for Phase 1b.
 
 ## Decisions
 <!-- date — decision — reason -->
 - 2026-10-14 — Latency benchmarks and `env-orig` run on the laptop's RTX 4060 Laptop GPU (8 GB) — it is the GPU the team actually has; user confirmed.
 - 2026-10-14 — H100 jobs launched over SSH with tmux/nohup scripts — user's access method.
 - 2026-10-14 — WSL2 memory raised to 12 GB + 8 GB swap (`.wslconfig`) — official loader peaked at 8.1 GB RSS; user approved.
+- 2026-10-15 — Our `train.py` gets `--seed` (default 0). With seed 0 it is identical to the official script (which hard-codes `seed_all(0)` and `Generator().manual_seed(0)`); the seed replaces those two. The `seed_all(0)` before each validation pass stays (deterministic eval). — Phases 1c/2/3 need seeds 0, 1, 2; user delegated the choice.
+- 2026-10-15 — Model selection rule for all models we train: EMA weights (`model_ema.pth`) from the epoch with the best **validation macro-F1** (official per-epoch val log); ties → earlier epoch. Debris-F1 not used because val has only 1,162 debris px (noisy selection, and it would favour debris-targeted settings). The same rule for teacher, students, pruned models. — Official script has no rule; user delegated the choice.
 - 2026-10-14 — env-orig on glibc 2.43 uses `GLIBC_TUNABLES=glibc.rtld.execstack=2` (conda env var) so PyTorch 1.11 loads; no package versions changed.
 
 ## Corrections (docs vs actual code)

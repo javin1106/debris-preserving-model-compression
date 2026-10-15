@@ -1,0 +1,15 @@
+diff --git a/marinext/mmseg/models/losses/focal_loss.py b/marinext/mmseg/models/losses/focal_loss.py
+--- a/marinext/mmseg/models/losses/focal_loss.py
++++ b/marinext/mmseg/models/losses/focal_loss.py
+@@ -3,7 +3,10 @@
+ import torch
+ import torch.nn as nn
+ import torch.nn.functional as F
+-from mmcv.ops import sigmoid_focal_loss as _sigmoid_focal_loss
++try:
++    from mmcv.ops import sigmoid_focal_loss as _sigmoid_focal_loss
++except ImportError:  # mmcv-lite (env-h100) has no compiled ops; focal loss is not used by MariNeXt
++    _sigmoid_focal_loss = None
+
+ from ..builder import LOSSES
+ from .utils import weight_reduce_loss

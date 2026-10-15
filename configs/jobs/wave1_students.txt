@@ -1,0 +1,4 @@
+# Wave 1 (laptop, env-orig): setting B width sweep, seed 0. run_id  train.py args
+p2-B-w0.5-s0-20261015-1851 --width 0.5 --seed 0
+p2-B-w0.25-s0-20261015-1851 --width 0.25 --seed 0
+p2-B-w0.125-s0-20261015-1851 --width 0.125 --seed 0
