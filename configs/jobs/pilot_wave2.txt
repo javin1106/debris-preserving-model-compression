@@ -1,0 +1,3 @@
+# Phase 3 pilot wave 2.
+p3-F-w0.25-s0-20261020-1835 --config configs/settings/F.yaml --width 0.25 --seed 0 --phase p3
+p3-C-w0.25-s0-20261020-1835 --config configs/settings/C.yaml --width 0.25 --seed 0 --phase p3

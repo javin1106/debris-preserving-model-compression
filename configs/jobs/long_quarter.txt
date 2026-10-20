@@ -1,0 +1,2 @@
+# Exploratory (user request 2026-10-20): x0.25 student, setting B, 160 epochs with LR steps scaled to [90,130].
+p2-Blong-w0.25-s0-20261020-1829 --width 0.25 --seed 0 --setting Blong --epochs 160 --lr_steps [90,130]

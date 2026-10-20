@@ -1,0 +1,3 @@
+# Phase 3 pilot (laptop, overnight 2026-10-21): x0.25, seed 0, 80 epochs, default (untuned) KD settings. Wave 1.
+p3-D-w0.25-s0-20261020-1835 --config configs/settings/D.yaml --width 0.25 --seed 0 --phase p3
+p3-E-w0.25-s0-20261020-1835 --config configs/settings/E.yaml --width 0.25 --seed 0 --phase p3
