@@ -11,6 +11,7 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
+import matplotlib.ticker  # noqa: E402
 import numpy as np  # noqa: E402
 
 REPO = Path(__file__).resolve().parents[1]
@@ -81,7 +82,11 @@ def main() -> None:
             for r in pts:
                 ax.annotate(f"×{r['width']:g}", (r[key], r["debris_f1_val"]), textcoords="offset points", xytext=(0, 9),
                             ha="center", color=INK2)
-            ax.set_xscale("log"); ax.set_xlabel(f"latency, ms (log), {lab}")
+            if key.startswith("cpu"):
+                ax.set_xscale("log")
+                ax.set_xticks([10, 20, 40, 80]); ax.set_xticks([], minor=True)
+                ax.xaxis.set_major_formatter(matplotlib.ticker.ScalarFormatter())
+            ax.set_xlabel(f"latency per image, ms ({lab})")
         axes[0].set_ylabel("validation debris F1 (%)")
         fig.suptitle("Debris F1 vs latency (×1 = released teachers, others = setting B)", x=0.06, ha="left",
                      color=INK, fontweight="bold")

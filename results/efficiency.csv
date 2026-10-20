@@ -1,0 +1,5 @@
+width,params,macs_conv_linear_G,state_dict_MB,gpu_median_ms,gpu_p90_ms,gpu_peak_MB,cpu8t_median_ms,cpu1t_median_ms,debris_f1_val,debris_f1_test,accuracy_source,bench_run
+1.0,4238063,2.243,16.38,10.98,12.69,40.7,49.9,84.6,63.9,48.5,released ckpts 1–5 (mean),p4-bench-laptop-20261020-1814
+0.5,1130751,0.6,4.51,10.25,13.01,18.1,21.9,36.7,41.5,29.9,p2-B-w0.5-s0-20261015-1851,p4-bench-laptop-20261020-1814
+0.25,318311,0.17,1.4,12.66,19.72,9.3,16.2,20.8,29.8,27.1,p2-B-w0.25-s0-20261015-1851,p4-bench-laptop-20261020-1814
+0.125,97395,0.052,0.55,15.19,21.07,6.2,11.5,12.5,28.5,31.7,p2-B-w0.125-s0-20261015-1851,p4-bench-laptop-20261020-1814

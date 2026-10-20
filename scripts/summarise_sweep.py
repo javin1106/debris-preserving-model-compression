@@ -126,7 +126,7 @@ def main() -> None:
         L.append("")
     pending = [d.name for k, d in runs.items() if k not in done]
     if pending:
-        L.append("**Still training (not in the tables):** " + ", ".join(f"`{p}`" for p in pending) + "\n")
+        L.append("**Unfinished runs (not in the tables):** " + ", ".join(f"`{p}`" for p in pending) + "\n")
     (RES / "width_sweep.md").write_text("\n".join(L) + "\n", encoding="utf-8")
 
     # ---------------- Figure 1: debris F1 vs params ----------------
@@ -150,7 +150,7 @@ def main() -> None:
             ax.set_xscale("log"); ax.set_xlabel("parameters (log scale)")
             ax.set_title(f"{split} split", color=INK, loc="left")
         axes[0].set_ylabel("Marine Debris F1 (%), single pass")
-        axes[1].legend(loc="lower right")
+        axes[0].legend(loc="upper left")
         fig.suptitle("Debris F1 vs model size", x=0.06, ha="left", color=INK, fontweight="bold")
         for ext in ("png", "pdf"):
             fig.savefig(RES / f"fig_width_sweep.{ext}")
@@ -164,11 +164,11 @@ def main() -> None:
                               for c in classes])
             order = np.argsort(delta[:, -1])
             fig, ax = plt.subplots(figsize=(1.2 * len(studs) + 4.5, 6))
+            ax.grid(False)
             lim = max(10, np.abs(delta).max())
             im = ax.imshow(delta[order], cmap="RdBu", vmin=-lim, vmax=lim, aspect="auto")
             ax.set_yticks(range(len(classes))); ax.set_yticklabels([classes[i] for i in order])
             ax.set_xticks(range(len(studs))); ax.set_xticklabels([f"×{m['width']:g}\n{m['params']/1e3:.0f}k" for m in studs])
-            ax.grid(False)
             for i, ci in enumerate(order):
                 for j in range(len(studs)):
                     v = delta[ci, j]
