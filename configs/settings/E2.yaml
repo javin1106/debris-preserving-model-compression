@@ -1,0 +1,12 @@
+# E2: E with class-weighted KD, lam_U 0.5, T 1, tau 0.8; 160 epochs, LR steps [90,130].
+setting: E2
+teacher_ckpt: checkpoints/teacher/5/marinext_5.pth
+kd_class_weighted: true
+kd_T: 1.0
+kd_tau: 0.8
+lam_L: 0.0
+lam_U: 0.5
+debris_w: 1.0
+kd_warmup_epochs: 5
+epochs: 160
+lr_steps: "[90,130]"

@@ -1,0 +1,5 @@
+# C-long: C (debris CE weight x2) with the small-model recipe: 160 epochs, LR steps [90,130].
+setting: Clong
+extra_debris_ce_weight: 2.0
+epochs: 160
+lr_steps: "[90,130]"

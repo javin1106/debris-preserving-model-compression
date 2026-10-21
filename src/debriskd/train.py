@@ -144,7 +144,8 @@ def main(options):
         teacher.requires_grad_(False)
         kd_cfg = KDConfig(T=options["kd_T"], tau=options["kd_tau"], lam_L=options["lam_L"], lam_U=options["lam_U"],
                           debris_w=options["debris_w"], debris_w_max=options["debris_w_max"],
-                          warmup_epochs=options["kd_warmup_epochs"])
+                          warmup_epochs=options["kd_warmup_epochs"],
+                          class_weights=weight.clone() if options["kd_class_weighted"] else None)
         logging.info("teacher %s, KD %s", options["teacher_ckpt"], kd_cfg)
 
     start, best = 1, {"epoch": None, "macro_f1": -1.0}
@@ -289,6 +290,8 @@ def parse_args(argv=None):
     parser.add_argument("--debris_w", default=1.0, type=float)
     parser.add_argument("--debris_w_max", default=4.0, type=float)
     parser.add_argument("--kd_warmup_epochs", default=5, type=int)
+    parser.add_argument("--kd_class_weighted", default=False, type=bool_flag,
+                        help="weight KD terms by the official CE class weights (true class / teacher class)")
     parser.add_argument("--extra_debris_ce_weight", default=1.0, type=float, help="setting C; 1.0 = official")
     parser.add_argument("--config", default="", help="YAML of train.py options (configs/settings/*.yaml); CLI wins")
     pre, _ = parser.parse_known_args(argv)

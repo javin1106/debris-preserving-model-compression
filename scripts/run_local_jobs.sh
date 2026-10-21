@@ -22,5 +22,12 @@ while read -r rid args; do
     pids+=($!)
     sleep 20   # stagger start-up
 done < "$JOBFILE"
+if [ "${SHOW_LOGS:-0}" = "1" ] && [ ${#pids[@]} -gt 0 ]; then
+    # Live view: print each finished epoch (and final results) of the jobs started above.
+    logs=(); while read -r rid args; do [ -z "$rid" ] || [[ "$rid" == \#* ]] && continue; logs+=("runs/$rid/train.log"); done < "$JOBFILE"
+    tail -n 0 -F "${logs[@]}" 2>/dev/null | grep --line-buffered -E "==>|epoch [0-9]+ \||FINAL|DONE|Error" &
+    tailpid=$!
+fi
 for p in "${pids[@]}"; do wait "$p"; done
+[ -n "${tailpid:-}" ] && kill "$tailpid" 2>/dev/null
 echo "ALL_JOBS_DONE $(date)"

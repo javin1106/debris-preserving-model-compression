@@ -29,6 +29,10 @@ class KDConfig:
     debris_w: float = 1.0
     debris_w_max: float = 4.0
     warmup_epochs: int = 5
+    # Optional per-class weights (e.g. the official CE weights). When set, each KD term is a class-weighted mean,
+    # like weighted cross-entropy: labelled pixels weighted by their true class, unlabelled pixels by the teacher's
+    # predicted class. Added 2026-10-21 after the pilot: unweighted KD is dominated by water pixels.
+    class_weights: Optional[torch.Tensor] = None
 
 
 def lam_U_at(epoch: int, cfg: KDConfig) -> float:
@@ -54,8 +58,15 @@ def kd_terms(s: torch.Tensor, t: torch.Tensor, y: torch.Tensor, cfg: KDConfig,
     ign = ~lab
     elig = ign & (w > 0)
     zero = s.sum() * 0.0                                                # keeps the graph, value 0
-    L_lab = kl[lab].mean() if lab.any() else zero
-    L_ign = (w * d * kl)[elig].mean() if elig.any() else zero
+    if cfg.class_weights is None:
+        L_lab = kl[lab].mean() if lab.any() else zero
+        L_ign = (w * d * kl)[elig].mean() if elig.any() else zero
+    else:
+        cw = cfg.class_weights.to(kl.device)
+        c_lab = cw[y.clamp(min=0)]                                       # true-class weight (ignored px masked out)
+        c_ign = cw[t.argmax(1)]                                          # teacher-class weight
+        L_lab = (c_lab * kl)[lab].sum() / c_lab[lab].sum() if lab.any() else zero
+        L_ign = (c_ign * w * d * kl)[elig].sum() / c_ign[elig].sum() if elig.any() else zero
     with torch.no_grad():
         n_ign = int(ign.sum())
         frac_used = float(elig.sum()) / max(n_ign, 1)

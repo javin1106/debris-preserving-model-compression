@@ -1,0 +1,3 @@
+# Round 2 (2026-10-21), x0.25, seed 0, 160 epochs, class-weighted KD. Wave 1.
+p3-E2-w0.25-s0-20261021-0312 --config configs/settings/E2.yaml --width 0.25 --seed 0 --phase p3
+p3-F2-w0.25-s0-20261021-0312 --config configs/settings/F2.yaml --width 0.25 --seed 0 --phase p3

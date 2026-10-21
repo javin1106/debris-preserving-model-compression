@@ -111,3 +111,19 @@ def test_no_eligible_pixels_is_zero_not_nan():
     s, t, y = batch()
     k = kd_terms(s, t, y, KDConfig(tau=0.999999))
     assert torch.isfinite(k["kd_ign"]) and k["kd_ign"] == 0
+
+
+def test_class_weighted_kd():
+    s, t, y = batch()
+    ones = KDConfig(tau=0.0, class_weights=torch.ones(C))
+    plain = KDConfig(tau=0.0)
+    a, b = kd_terms(s, t, y, ones), kd_terms(s, t, y, plain)
+    assert torch.allclose(a["kd_lab"], b["kd_lab"]) and torch.allclose(a["kd_ign"], b["kd_ign"])  # uniform = plain
+    cw = torch.ones(C); cw[DEBRIS] = 10.0
+    y2 = y.clone(); y2[y2 != IGNORE_INDEX] = DEBRIS                         # all labelled px are debris
+    k = kd_terms(s, t, y2, KDConfig(tau=0.0, class_weights=cw))
+    assert torch.allclose(k["kd_lab"], kd_terms(s, t, y2, plain)["kd_lab"])  # single class → same weighted mean
+    # Ignored pixels still never enter the labelled term with class weights.
+    s2 = s.detach().clone(); ign = (y2 == IGNORE_INDEX).unsqueeze(1).expand_as(s2)
+    s2[ign] = torch.randn(int(ign.sum()))
+    assert torch.allclose(kd_terms(s2, t, y2, KDConfig(tau=0.0, class_weights=cw))["kd_lab"], k["kd_lab"])

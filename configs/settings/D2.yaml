@@ -1,0 +1,9 @@
+# D2 (2026-10-21, after pilot): D with class-weighted KD, lam_L 0.5, T 1; small-model recipe 160 epochs, LR steps [90,130].
+setting: D2
+teacher_ckpt: checkpoints/teacher/5/marinext_5.pth
+kd_class_weighted: true
+kd_T: 1.0
+lam_L: 0.5
+lam_U: 0.0
+epochs: 160
+lr_steps: "[90,130]"
