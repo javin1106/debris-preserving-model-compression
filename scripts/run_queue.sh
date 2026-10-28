@@ -31,8 +31,9 @@ export -f run_one
 jobs_list="$(grep -vE '^[[:space:]]*(#|$)' "$JOBFILE")"
 if [ "${SHOW_LOGS:-0}" = "1" ]; then
     # Live view: print each finished epoch (and final results) of every job in the file.
+    # Polling, because inotify misses writes to files under /mnt/c in WSL.
     logs=(); while read -r rid _; do logs+=("runs/$rid/train.log"); done <<< "$jobs_list"
-    tail -n 0 -F "${logs[@]}" 2>/dev/null | grep --line-buffered -E "==>|epoch [0-9]+ \||FINAL|DONE|Error" &
+    tail -n 0 --use-polling -s 5 -F "${logs[@]}" 2>/dev/null | grep --line-buffered -E "==>|epoch [0-9]+ \||FINAL|DONE|Error" &
     tailpid=$!
 fi
 echo "$jobs_list" | xargs -P "$SLOTS" -L 1 bash -c 'run_one "$@"' _
