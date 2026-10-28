@@ -1,0 +1,109 @@
+group,tag,run_id,split,engine,debris_f1,debris_recall,debris_precision,macro_f1,mIoU
+Teacher (released ckpts) [plain],A-ckpt1,p4-H-A-ckpt1-20261028-1831,val,torch_fp32,60.51,72.98,51.68,71.52,59.09
+Teacher (released ckpts) [plain],A-ckpt1,p4-H-A-ckpt1-20261028-1831,val,onnx_fp32,60.51,72.98,51.68,71.52,59.09
+Teacher (released ckpts) [plain],A-ckpt1,p4-H-A-ckpt1-20261028-1831,val,onnx_int8,45.39,68.24,34.01,65.46,53.51
+Teacher (released ckpts) [plain],A-ckpt2,p4-H-A-ckpt2-20261028-1838,val,torch_fp32,62.91,74.53,54.43,75.12,64.37
+Teacher (released ckpts) [plain],A-ckpt2,p4-H-A-ckpt2-20261028-1838,val,onnx_fp32,62.91,74.53,54.43,75.12,64.37
+Teacher (released ckpts) [plain],A-ckpt2,p4-H-A-ckpt2-20261028-1838,val,onnx_int8,45.15,65.32,34.5,66.41,55.72
+Teacher (released ckpts) [plain],A-ckpt3,p4-H-A-ckpt3-20261028-1846,val,torch_fp32,64.61,73.15,57.86,72.17,61.29
+Teacher (released ckpts) [plain],A-ckpt3,p4-H-A-ckpt3-20261028-1846,val,onnx_fp32,64.61,73.15,57.86,72.17,61.29
+Teacher (released ckpts) [plain],A-ckpt3,p4-H-A-ckpt3-20261028-1846,val,onnx_int8,45.56,64.89,35.1,66.64,55.55
+Teacher (released ckpts) [plain],A-ckpt4,p4-H-A-ckpt4-20261028-1853,val,torch_fp32,62.4,78.06,51.98,71.63,60.82
+Teacher (released ckpts) [plain],A-ckpt4,p4-H-A-ckpt4-20261028-1853,val,onnx_fp32,62.4,78.06,51.98,71.63,60.82
+Teacher (released ckpts) [plain],A-ckpt4,p4-H-A-ckpt4-20261028-1853,val,onnx_int8,47.61,67.3,36.83,66.57,55.51
+Teacher (released ckpts) [plain],A-ckpt5,p4-H-A-ckpt5-20261028-1901,val,torch_fp32,69.14,74.53,64.48,71.62,60.45
+Teacher (released ckpts) [plain],A-ckpt5,p4-H-A-ckpt5-20261028-1901,val,onnx_fp32,69.14,74.53,64.48,71.62,60.45
+Teacher (released ckpts) [plain],A-ckpt5,p4-H-A-ckpt5-20261028-1901,val,onnx_int8,50.33,66.44,40.5,67.68,57.27
+Teacher (released ckpts) [ends],A-ckpt1-qends,p4-H-A-ckpt1-qends-20261028-1937,val,torch_fp32,60.51,72.98,51.68,71.52,59.09
+Teacher (released ckpts) [ends],A-ckpt1-qends,p4-H-A-ckpt1-qends-20261028-1937,val,onnx_fp32,60.51,72.98,51.68,71.52,59.09
+Teacher (released ckpts) [ends],A-ckpt1-qends,p4-H-A-ckpt1-qends-20261028-1937,val,onnx_int8,57.97,71.17,48.91,70.53,58.1
+Teacher (released ckpts) [pct],A-ckpt1-qpct,p4-H-A-ckpt1-qpct-20261028-1923,val,torch_fp32,60.51,72.98,51.68,71.52,59.09
+Teacher (released ckpts) [pct],A-ckpt1-qpct,p4-H-A-ckpt1-qpct-20261028-1923,val,onnx_fp32,60.51,72.98,51.68,71.52,59.09
+Teacher (released ckpts) [pct],A-ckpt1-qpct,p4-H-A-ckpt1-qpct-20261028-1923,val,onnx_int8,57.42,71.43,48.0,70.79,58.64
+Teacher (released ckpts) [pctends],A-ckpt1-qpctends,p4-H-A-ckpt1-qpctends-20261028-2000,val,torch_fp32,60.51,72.98,51.68,71.52,59.09
+Teacher (released ckpts) [pctends],A-ckpt1-qpctends,p4-H-A-ckpt1-qpctends-20261028-2000,val,onnx_fp32,60.51,72.98,51.68,71.52,59.09
+Teacher (released ckpts) [pctends],A-ckpt1-qpctends,p4-H-A-ckpt1-qpctends-20261028-2000,val,onnx_int8,59.79,71.86,51.2,70.95,58.37
+Teacher (released ckpts) [pctends],A-ckpt2-qpctends,p4-H-A-ckpt2-qpctends-20261028-2016,val,torch_fp32,62.91,74.53,54.43,75.12,64.37
+Teacher (released ckpts) [pctends],A-ckpt2-qpctends,p4-H-A-ckpt2-qpctends-20261028-2016,val,onnx_fp32,62.91,74.53,54.43,75.12,64.37
+Teacher (released ckpts) [pctends],A-ckpt2-qpctends,p4-H-A-ckpt2-qpctends-20261028-2016,val,onnx_int8,62.87,74.53,54.36,75.42,64.46
+Teacher (released ckpts) [pctends],A-ckpt3-qpctends,p4-H-A-ckpt3-qpctends-20261028-2033,val,torch_fp32,64.61,73.15,57.86,72.17,61.29
+Teacher (released ckpts) [pctends],A-ckpt3-qpctends,p4-H-A-ckpt3-qpctends-20261028-2033,val,onnx_fp32,64.61,73.15,57.86,72.17,61.29
+Teacher (released ckpts) [pctends],A-ckpt3-qpctends,p4-H-A-ckpt3-qpctends-20261028-2033,val,onnx_int8,63.63,73.24,56.25,71.43,60.66
+Teacher (released ckpts) [pctends],A-ckpt4-qpctends,p4-H-A-ckpt4-qpctends-20261028-2050,val,torch_fp32,62.4,78.06,51.98,71.63,60.82
+Teacher (released ckpts) [pctends],A-ckpt4-qpctends,p4-H-A-ckpt4-qpctends-20261028-2050,val,onnx_fp32,62.4,78.06,51.98,71.63,60.82
+Teacher (released ckpts) [pctends],A-ckpt4-qpctends,p4-H-A-ckpt4-qpctends-20261028-2050,val,onnx_int8,62.29,77.11,52.24,71.04,60.1
+Teacher (released ckpts) [pctends],A-ckpt5-qpctends,p4-H-A-ckpt5-qpctends-20261028-2106,val,torch_fp32,69.14,74.53,64.48,71.62,60.45
+Teacher (released ckpts) [pctends],A-ckpt5-qpctends,p4-H-A-ckpt5-qpctends-20261028-2106,val,onnx_fp32,69.14,74.53,64.48,71.62,60.45
+Teacher (released ckpts) [pctends],A-ckpt5-qpctends,p4-H-A-ckpt5-qpctends-20261028-2106,val,onnx_int8,67.46,72.98,62.72,71.44,60.36
+Teacher (released ckpts) [rr],A-ckpt1-qrr,p4-H-A-ckpt1-qrr-20261028-1919,val,torch_fp32,60.51,72.98,51.68,71.52,59.09
+Teacher (released ckpts) [rr],A-ckpt1-qrr,p4-H-A-ckpt1-qrr-20261028-1919,val,onnx_fp32,60.51,72.98,51.68,71.52,59.09
+Teacher (released ckpts) [rr],A-ckpt1-qrr,p4-H-A-ckpt1-qrr-20261028-1919,val,onnx_int8,45.76,69.28,34.17,65.31,53.32
+Teacher (released ckpts) [s8],A-ckpt1-qs8,p4-H-A-ckpt1-qs8-20261028-1941,val,torch_fp32,60.51,72.98,51.68,71.52,59.09
+Teacher (released ckpts) [s8],A-ckpt1-qs8,p4-H-A-ckpt1-qs8-20261028-1941,val,onnx_fp32,60.51,72.98,51.68,71.52,59.09
+Teacher (released ckpts) [s8],A-ckpt1-qs8,p4-H-A-ckpt1-qs8-20261028-1941,val,onnx_int8,34.24,52.93,25.31,63.56,52.04
+F2-w0.25 [plain],F2-w0.25-s0,p4-H-F2-w0.25-s0-20261028-1907,val,torch_fp32,46.34,50.69,42.68,63.88,52.96
+F2-w0.25 [plain],F2-w0.25-s0,p4-H-F2-w0.25-s0-20261028-1907,val,onnx_fp32,46.34,50.69,42.68,63.88,52.96
+F2-w0.25 [plain],F2-w0.25-s0,p4-H-F2-w0.25-s0-20261028-1907,val,onnx_int8,29.3,47.16,21.25,56.06,44.94
+F2-w0.25 [plain],F2-w0.25-s1,p4-H-F2-w0.25-s1-20261028-1911,val,torch_fp32,39.94,43.2,37.13,52.94,40.87
+F2-w0.25 [plain],F2-w0.25-s1,p4-H-F2-w0.25-s1-20261028-1911,val,onnx_fp32,39.94,43.2,37.13,52.94,40.87
+F2-w0.25 [plain],F2-w0.25-s1,p4-H-F2-w0.25-s1-20261028-1911,val,onnx_int8,30.23,35.46,26.34,48.78,37.69
+F2-w0.25 [plain],F2-w0.25-s2,p4-H-F2-w0.25-s2-20261028-1915,val,torch_fp32,39.83,45.01,35.72,48.33,35.59
+F2-w0.25 [plain],F2-w0.25-s2,p4-H-F2-w0.25-s2-20261028-1915,val,onnx_fp32,39.83,45.01,35.72,48.33,35.59
+F2-w0.25 [plain],F2-w0.25-s2,p4-H-F2-w0.25-s2-20261028-1915,val,onnx_int8,32.18,38.9,27.44,46.79,34.76
+F2-w0.25 [pctends],F2-w0.25-s0-qpctends,p4-H-F2-w0.25-s0-qpctends-20261028-2123,val,torch_fp32,46.34,50.69,42.68,63.88,52.96
+F2-w0.25 [pctends],F2-w0.25-s0-qpctends,p4-H-F2-w0.25-s0-qpctends-20261028-2123,val,onnx_fp32,46.34,50.69,42.68,63.88,52.96
+F2-w0.25 [pctends],F2-w0.25-s0-qpctends,p4-H-F2-w0.25-s0-qpctends-20261028-2123,val,onnx_int8,46.45,51.46,42.32,63.72,52.78
+F2-w0.25 [pctends],F2-w0.25-s1-qpctends,p4-H-F2-w0.25-s1-qpctends-20261028-2129,val,torch_fp32,39.94,43.2,37.13,52.94,40.87
+F2-w0.25 [pctends],F2-w0.25-s1-qpctends,p4-H-F2-w0.25-s1-qpctends-20261028-2129,val,onnx_fp32,39.94,43.2,37.13,52.94,40.87
+F2-w0.25 [pctends],F2-w0.25-s1-qpctends,p4-H-F2-w0.25-s1-qpctends-20261028-2129,val,onnx_int8,38.72,44.15,34.48,52.61,40.74
+F2-w0.25 [pctends],F2-w0.25-s2-qpctends,p4-H-F2-w0.25-s2-qpctends-20261028-2134,val,torch_fp32,39.83,45.01,35.72,48.33,35.59
+F2-w0.25 [pctends],F2-w0.25-s2-qpctends,p4-H-F2-w0.25-s2-qpctends-20261028-2134,val,onnx_fp32,39.83,45.01,35.72,48.33,35.59
+F2-w0.25 [pctends],F2-w0.25-s2-qpctends,p4-H-F2-w0.25-s2-qpctends-20261028-2134,val,onnx_int8,39.61,42.25,37.28,49.66,37.26
+Teacher (released ckpts) [plain],A-ckpt1,p4-H-A-ckpt1-20261028-1831,test,torch_fp32,45.02,66.7,33.98,73.6,60.54
+Teacher (released ckpts) [plain],A-ckpt1,p4-H-A-ckpt1-20261028-1831,test,onnx_fp32,45.02,66.7,33.98,73.6,60.54
+Teacher (released ckpts) [plain],A-ckpt1,p4-H-A-ckpt1-20261028-1831,test,onnx_int8,25.92,59.61,16.56,65.99,52.58
+Teacher (released ckpts) [plain],A-ckpt2,p4-H-A-ckpt2-20261028-1838,test,torch_fp32,50.86,71.53,39.46,70.7,57.54
+Teacher (released ckpts) [plain],A-ckpt2,p4-H-A-ckpt2-20261028-1838,test,onnx_fp32,50.86,71.53,39.46,70.7,57.54
+Teacher (released ckpts) [plain],A-ckpt2,p4-H-A-ckpt2-20261028-1838,test,onnx_int8,27.82,62.49,17.89,61.46,47.92
+Teacher (released ckpts) [plain],A-ckpt3,p4-H-A-ckpt3-20261028-1846,test,torch_fp32,44.34,67.83,32.93,74.28,61.8
+Teacher (released ckpts) [plain],A-ckpt3,p4-H-A-ckpt3-20261028-1846,test,onnx_fp32,44.34,67.83,32.93,74.28,61.8
+Teacher (released ckpts) [plain],A-ckpt3,p4-H-A-ckpt3-20261028-1846,test,onnx_int8,24.88,54.47,16.12,68.13,54.91
+Teacher (released ckpts) [plain],A-ckpt4,p4-H-A-ckpt4-20261028-1853,test,torch_fp32,46.26,69.37,34.7,72.29,58.98
+Teacher (released ckpts) [plain],A-ckpt4,p4-H-A-ckpt4-20261028-1853,test,onnx_fp32,46.26,69.37,34.7,72.29,58.98
+Teacher (released ckpts) [plain],A-ckpt4,p4-H-A-ckpt4-20261028-1853,test,onnx_int8,26.86,55.09,17.76,68.67,55.78
+Teacher (released ckpts) [plain],A-ckpt5,p4-H-A-ckpt5-20261028-1901,test,torch_fp32,56.01,63.41,50.16,72.36,59.32
+Teacher (released ckpts) [plain],A-ckpt5,p4-H-A-ckpt5-20261028-1901,test,onnx_fp32,56.01,63.41,50.16,72.36,59.32
+Teacher (released ckpts) [plain],A-ckpt5,p4-H-A-ckpt5-20261028-1901,test,onnx_int8,33.6,59.51,23.41,64.13,51.19
+Teacher (released ckpts) [pctends],A-ckpt1-qpctends,p4-H-A-ckpt1-qpctends-20261028-2000,test,torch_fp32,45.02,66.7,33.98,73.6,60.54
+Teacher (released ckpts) [pctends],A-ckpt1-qpctends,p4-H-A-ckpt1-qpctends-20261028-2000,test,onnx_fp32,45.02,66.7,33.98,73.6,60.54
+Teacher (released ckpts) [pctends],A-ckpt1-qpctends,p4-H-A-ckpt1-qpctends-20261028-2000,test,onnx_int8,44.47,66.6,33.38,73.84,60.87
+Teacher (released ckpts) [pctends],A-ckpt2-qpctends,p4-H-A-ckpt2-qpctends-20261028-2016,test,torch_fp32,50.86,71.53,39.46,70.7,57.54
+Teacher (released ckpts) [pctends],A-ckpt2-qpctends,p4-H-A-ckpt2-qpctends-20261028-2016,test,onnx_fp32,50.86,71.53,39.46,70.7,57.54
+Teacher (released ckpts) [pctends],A-ckpt2-qpctends,p4-H-A-ckpt2-qpctends-20261028-2016,test,onnx_int8,50.17,69.48,39.26,72.35,59.41
+Teacher (released ckpts) [pctends],A-ckpt3-qpctends,p4-H-A-ckpt3-qpctends-20261028-2033,test,torch_fp32,44.34,67.83,32.93,74.28,61.8
+Teacher (released ckpts) [pctends],A-ckpt3-qpctends,p4-H-A-ckpt3-qpctends-20261028-2033,test,onnx_fp32,44.34,67.83,32.93,74.28,61.8
+Teacher (released ckpts) [pctends],A-ckpt3-qpctends,p4-H-A-ckpt3-qpctends-20261028-2033,test,onnx_int8,42.8,66.39,31.57,74.21,61.85
+Teacher (released ckpts) [pctends],A-ckpt4-qpctends,p4-H-A-ckpt4-qpctends-20261028-2050,test,torch_fp32,46.26,69.37,34.7,72.29,58.98
+Teacher (released ckpts) [pctends],A-ckpt4-qpctends,p4-H-A-ckpt4-qpctends-20261028-2050,test,onnx_fp32,46.26,69.37,34.7,72.29,58.98
+Teacher (released ckpts) [pctends],A-ckpt4-qpctends,p4-H-A-ckpt4-qpctends-20261028-2050,test,onnx_int8,46.63,69.99,34.96,72.05,58.84
+Teacher (released ckpts) [pctends],A-ckpt5-qpctends,p4-H-A-ckpt5-qpctends-20261028-2106,test,torch_fp32,56.01,63.41,50.16,72.36,59.32
+Teacher (released ckpts) [pctends],A-ckpt5-qpctends,p4-H-A-ckpt5-qpctends-20261028-2106,test,onnx_fp32,56.01,63.41,50.16,72.36,59.32
+Teacher (released ckpts) [pctends],A-ckpt5-qpctends,p4-H-A-ckpt5-qpctends-20261028-2106,test,onnx_int8,55.09,61.77,49.71,72.4,59.37
+F2-w0.25 [plain],F2-w0.25-s0,p4-H-F2-w0.25-s0-20261028-1907,test,torch_fp32,35.44,38.85,32.59,53.55,42.3
+F2-w0.25 [plain],F2-w0.25-s0,p4-H-F2-w0.25-s0-20261028-1907,test,onnx_fp32,35.44,38.85,32.59,53.55,42.3
+F2-w0.25 [plain],F2-w0.25-s0,p4-H-F2-w0.25-s0-20261028-1907,test,onnx_int8,28.17,50.87,19.47,49.08,37.83
+F2-w0.25 [plain],F2-w0.25-s1,p4-H-F2-w0.25-s1-20261028-1911,test,torch_fp32,39.7,51.08,32.46,53.74,41.13
+F2-w0.25 [plain],F2-w0.25-s1,p4-H-F2-w0.25-s1-20261028-1911,test,onnx_fp32,39.7,51.08,32.46,53.74,41.13
+F2-w0.25 [plain],F2-w0.25-s1,p4-H-F2-w0.25-s1-20261028-1911,test,onnx_int8,20.48,38.54,13.95,46.43,35.03
+F2-w0.25 [plain],F2-w0.25-s2,p4-H-F2-w0.25-s2-20261028-1915,test,torch_fp32,31.9,48.41,23.79,48.76,36.4
+F2-w0.25 [plain],F2-w0.25-s2,p4-H-F2-w0.25-s2-20261028-1915,test,onnx_fp32,31.9,48.41,23.79,48.76,36.4
+F2-w0.25 [plain],F2-w0.25-s2,p4-H-F2-w0.25-s2-20261028-1915,test,onnx_int8,23.71,34.33,18.11,45.91,33.98
+F2-w0.25 [pctends],F2-w0.25-s0-qpctends,p4-H-F2-w0.25-s0-qpctends-20261028-2123,test,torch_fp32,35.44,38.85,32.59,53.55,42.3
+F2-w0.25 [pctends],F2-w0.25-s0-qpctends,p4-H-F2-w0.25-s0-qpctends-20261028-2123,test,onnx_fp32,35.44,38.85,32.59,53.55,42.3
+F2-w0.25 [pctends],F2-w0.25-s0-qpctends,p4-H-F2-w0.25-s0-qpctends-20261028-2123,test,onnx_int8,34.5,40.39,30.11,53.48,42.16
+F2-w0.25 [pctends],F2-w0.25-s1-qpctends,p4-H-F2-w0.25-s1-qpctends-20261028-2129,test,torch_fp32,39.7,51.08,32.46,53.74,41.13
+F2-w0.25 [pctends],F2-w0.25-s1-qpctends,p4-H-F2-w0.25-s1-qpctends-20261028-2129,test,onnx_fp32,39.7,51.08,32.46,53.74,41.13
+F2-w0.25 [pctends],F2-w0.25-s1-qpctends,p4-H-F2-w0.25-s1-qpctends-20261028-2129,test,onnx_int8,35.24,51.28,26.84,54.49,42.17
+F2-w0.25 [pctends],F2-w0.25-s2-qpctends,p4-H-F2-w0.25-s2-qpctends-20261028-2134,test,torch_fp32,31.9,48.41,23.79,48.76,36.4
+F2-w0.25 [pctends],F2-w0.25-s2-qpctends,p4-H-F2-w0.25-s2-qpctends-20261028-2134,test,onnx_fp32,31.9,48.41,23.79,48.76,36.4
+F2-w0.25 [pctends],F2-w0.25-s2-qpctends,p4-H-F2-w0.25-s2-qpctends-20261028-2134,test,onnx_int8,37.57,46.35,31.58,49.96,37.76
