@@ -47,6 +47,15 @@ all keys matched (after `evaluation.py`'s key remap).
 WSL memory raised for the full-split loaders: `C:\Users\LENOVO\.wslconfig` → `[wsl2] memory=12GB, swap=8GB`
 (user approved 2026-10-14; effective after `wsl --shutdown`).
 
+**Added 2026-10-29 (user approved, Phase 4 INT8):** `pip install onnx==1.17.0 onnxruntime==1.19.2` in env-orig
+(last releases with Python 3.8 wheels; pulled only small deps: coloredlogs, flatbuffers, humanfriendly, mpmath, sympy;
+no pinned package changed — torch 1.11.0+cu113, numpy 1.23.1 as before). ONNX Runtime is CPU-only here.
+
+**WSL quirks found 2026-10-28:** (a) the WSL login shell `cd`s to `~/zulip` (user's profile), so launchers must
+`cd` inside the command, not rely on `wsl --cd`; (b) Ubuntu 26.04 ships uutils `tail`, whose `-F` misses writes to
+files under `/mnt/c` — use `tail --use-polling`; (c) after a sleep/wake the NVIDIA driver logged ~1,200
+`nvlddmkm` FECS exceptions and killed CUDA processes ("CUDA error: unknown error") — a Windows restart cleared it.
+
 ## Data
 - MADOS: Zenodo record 10664073, single file `MADOS.zip`, 4.04 GB, md5 `1076b25d2797be3095d82a61105c7380`.
 - Location: `data/MADOS/` (gitignored): 174 `Scene_*` folders + `splits/{train,val,test}_X.txt`, 56,760 zip entries.

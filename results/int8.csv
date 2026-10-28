@@ -59,6 +59,9 @@ F2-w0.25 [pctends],F2-w0.25-s1-qpctends,p4-H-F2-w0.25-s1-qpctends-20261028-2129,
 F2-w0.25 [pctends],F2-w0.25-s2-qpctends,p4-H-F2-w0.25-s2-qpctends-20261028-2134,val,torch_fp32,39.83,45.01,35.72,48.33,35.59
 F2-w0.25 [pctends],F2-w0.25-s2-qpctends,p4-H-F2-w0.25-s2-qpctends-20261028-2134,val,onnx_fp32,39.83,45.01,35.72,48.33,35.59
 F2-w0.25 [pctends],F2-w0.25-s2-qpctends,p4-H-F2-w0.25-s2-qpctends-20261028-2134,val,onnx_int8,39.61,42.25,37.28,49.66,37.26
+F2-w0.5 [pctends],F2-w0.5-s0-qpctends,p4-H-F2-w0.5-s0-qpctends-20261028-2309,val,torch_fp32,59.22,68.67,52.05,67.1,54.94
+F2-w0.5 [pctends],F2-w0.5-s0-qpctends,p4-H-F2-w0.5-s0-qpctends-20261028-2309,val,onnx_fp32,59.22,68.67,52.05,67.1,54.94
+F2-w0.5 [pctends],F2-w0.5-s0-qpctends,p4-H-F2-w0.5-s0-qpctends-20261028-2309,val,onnx_int8,56.96,68.67,48.66,68.34,56.33
 Teacher (released ckpts) [plain],A-ckpt1,p4-H-A-ckpt1-20261028-1831,test,torch_fp32,45.02,66.7,33.98,73.6,60.54
 Teacher (released ckpts) [plain],A-ckpt1,p4-H-A-ckpt1-20261028-1831,test,onnx_fp32,45.02,66.7,33.98,73.6,60.54
 Teacher (released ckpts) [plain],A-ckpt1,p4-H-A-ckpt1-20261028-1831,test,onnx_int8,25.92,59.61,16.56,65.99,52.58
@@ -107,3 +110,6 @@ F2-w0.25 [pctends],F2-w0.25-s1-qpctends,p4-H-F2-w0.25-s1-qpctends-20261028-2129,
 F2-w0.25 [pctends],F2-w0.25-s2-qpctends,p4-H-F2-w0.25-s2-qpctends-20261028-2134,test,torch_fp32,31.9,48.41,23.79,48.76,36.4
 F2-w0.25 [pctends],F2-w0.25-s2-qpctends,p4-H-F2-w0.25-s2-qpctends-20261028-2134,test,onnx_fp32,31.9,48.41,23.79,48.76,36.4
 F2-w0.25 [pctends],F2-w0.25-s2-qpctends,p4-H-F2-w0.25-s2-qpctends-20261028-2134,test,onnx_int8,37.57,46.35,31.58,49.96,37.76
+F2-w0.5 [pctends],F2-w0.5-s0-qpctends,p4-H-F2-w0.5-s0-qpctends-20261028-2309,test,torch_fp32,45.19,60.64,36.02,60.67,48.6
+F2-w0.5 [pctends],F2-w0.5-s0-qpctends,p4-H-F2-w0.5-s0-qpctends-20261028-2309,test,onnx_fp32,45.19,60.64,36.02,60.67,48.6
+F2-w0.5 [pctends],F2-w0.5-s0-qpctends,p4-H-F2-w0.5-s0-qpctends-20261028-2309,test,onnx_int8,43.16,60.64,33.5,60.4,48.39
