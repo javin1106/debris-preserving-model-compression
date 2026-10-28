@@ -1,0 +1,3 @@
+# Seeds 1-2 for the top 3 x0.25 methods (2026-10-28). Wave 1.
+p2-Blong-w0.25-s1-20261028-0421 --width 0.25 --setting Blong --epochs 160 --lr_steps [90,130] --seed 1
+p3-Clong-w0.25-s1-20261028-0421 --config configs/settings/Clong.yaml --width 0.25 --seed 1 --phase p3
