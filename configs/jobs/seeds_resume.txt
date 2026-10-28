@@ -1,0 +1,7 @@
+# Resume of the seed 1-2 repeats after GPU driver crashes (2026-10-28). Run with scripts/run_queue.sh (2 slots).
+# Same run IDs and args as seeds_wave{1,2,3}.txt; longest jobs first. B-long s1 already finished.
+p3-F2-w0.25-s1-20261028-0421 --config configs/settings/F2.yaml --width 0.25 --seed 1 --phase p3
+p3-F2-w0.25-s2-20261028-0421 --config configs/settings/F2.yaml --width 0.25 --seed 2 --phase p3
+p3-Clong-w0.25-s1-20261028-0421 --config configs/settings/Clong.yaml --width 0.25 --seed 1 --phase p3
+p2-Blong-w0.25-s2-20261028-0421 --width 0.25 --setting Blong --epochs 160 --lr_steps [90,130] --seed 2
+p3-Clong-w0.25-s2-20261028-0421 --config configs/settings/Clong.yaml --width 0.25 --seed 2 --phase p3
