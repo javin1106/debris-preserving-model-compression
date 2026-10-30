@@ -1,0 +1,5 @@
+# Half width (x0.5), seeds 1-2, 160 rounds (2026-10-29 overnight): full method + normal training. Run with scripts/run_queue.sh.
+p3-F2-w0.5-s1-20261029-2110 --config configs/settings/F2.yaml --width 0.5 --seed 1 --phase p3
+p2-Blong-w0.5-s1-20261029-2110 --width 0.5 --setting Blong --epochs 160 --lr_steps [90,130] --seed 1
+p3-F2-w0.5-s2-20261029-2110 --config configs/settings/F2.yaml --width 0.5 --seed 2 --phase p3
+p2-Blong-w0.5-s2-20261029-2110 --width 0.5 --setting Blong --epochs 160 --lr_steps [90,130] --seed 2
