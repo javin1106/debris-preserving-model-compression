@@ -1,0 +1,77 @@
+table,split,key,n,share_pct,accuracy_pct,precision_pct
+reliability,train,"[0.00, 0.50)",16135,2.1,57.3,
+reliability,val,"[0.00, 0.50)",23895,6.7,40.6,
+reliability,train,"[0.50, 0.60)",30107,4.0,73.3,
+reliability,val,"[0.50, 0.60)",12722,3.6,49.6,
+reliability,train,"[0.60, 0.70)",39244,5.2,80.6,
+reliability,val,"[0.60, 0.70)",13327,3.7,51.6,
+reliability,train,"[0.70, 0.80)",63286,8.3,89.1,
+reliability,val,"[0.70, 0.80)",16029,4.5,57.3,
+reliability,train,"[0.80, 0.90)",94817,12.4,92.8,
+reliability,val,"[0.80, 0.90)",22922,6.4,75.1,
+reliability,train,"[0.90, 0.95)",109891,14.4,98.4,
+reliability,val,"[0.90, 0.95)",27371,7.6,89.9,
+reliability,train,"[0.95, 0.99)",198592,26.1,99.8,
+reliability,val,"[0.95, 0.99)",142487,39.8,98.0,
+reliability,train,"[0.99, 1.00]",209815,27.5,100.0,
+reliability,val,"[0.99, 1.00]",99368,27.7,99.7,
+per_class,train,Marine Debris,2561,38.0,95.8,95.7
+per_class,val,Marine Debris,1162,32.0,96.0,93.7
+per_class,train,Dense Sargassum,1838,76.3,90.9,99.9
+per_class,val,Dense Sargassum,1167,46.0,84.0,100.0
+per_class,train,Sparse Floating Algae,2559,74.2,98.2,92.6
+per_class,val,Sparse Floating Algae,627,35.7,99.1,67.9
+per_class,train,Natural Organic Material,1081,55.1,96.6,98.8
+per_class,val,Natural Organic Material,95,2.1,0.0,
+per_class,train,Ship,5908,65.0,94.3,98.1
+per_class,val,Ship,3740,58.2,28.7,75.6
+per_class,train,Oil Spill,140584,69.2,93.1,100.0
+per_class,val,Oil Spill,42456,56.0,68.3,97.9
+per_class,train,Marine Water,264943,87.3,99.9,96.5
+per_class,val,Marine Water,92294,93.8,99.9,90.4
+per_class,train,Sediment-Laden Water,157242,99.9,100.0,100.0
+per_class,val,Sediment-Laden Water,125565,100.0,100.0,100.0
+per_class,train,Foam,469,58.0,97.4,94.6
+per_class,val,Foam,369,49.1,100.0,100.0
+per_class,train,Turbid Water,89062,78.2,99.9,99.9
+per_class,val,Turbid Water,39076,87.4,99.5,100.0
+per_class,train,Shallow Water,70002,46.5,100.0,99.9
+per_class,val,Shallow Water,40019,33.4,91.7,98.6
+per_class,train,Waves & Wakes,9975,21.1,22.8,93.0
+per_class,val,Waves & Wakes,3998,16.0,4.9,93.9
+per_class,train,Oil Platform,6988,93.0,99.8,96.5
+per_class,val,Oil Platform,3923,54.0,92.0,55.7
+per_class,train,Jellyfish,1339,35.3,100.0,100.0
+per_class,val,Jellyfish,928,39.1,100.0,100.0
+per_class,train,Sea snot,7336,97.6,100.0,100.0
+per_class,val,Sea snot,2702,80.3,86.0,100.0
+unlabelled_hist,train,Marine Water,52426154,90.327,,
+unlabelled_hist,train,Turbid Water,2968791,5.115,,
+unlabelled_hist,train,Oil Spill,988501,1.703,,
+unlabelled_hist,train,Shallow Water,875646,1.509,,
+unlabelled_hist,train,Sediment-Laden Water,572018,0.986,,
+unlabelled_hist,train,Sea snot,80051,0.138,,
+unlabelled_hist,train,Sparse Floating Algae,41089,0.071,,
+unlabelled_hist,train,Oil Platform,29619,0.051,,
+unlabelled_hist,train,Ship,19294,0.033,,
+unlabelled_hist,train,Waves & Wakes,13336,0.023,,
+unlabelled_hist,train,Marine Debris,7927,0.014,,
+unlabelled_hist,train,Foam,7003,0.012,,
+unlabelled_hist,train,Dense Sargassum,5458,0.009,,
+unlabelled_hist,train,Natural Organic Material,4842,0.008,,
+unlabelled_hist,train,Jellyfish,864,0.001,,
+unlabelled_hist,val,Marine Water,21456961,90.207,,
+unlabelled_hist,val,Turbid Water,1290985,5.427,,
+unlabelled_hist,val,Shallow Water,482150,2.027,,
+unlabelled_hist,val,Oil Spill,268339,1.128,,
+unlabelled_hist,val,Sediment-Laden Water,212578,0.894,,
+unlabelled_hist,val,Sea snot,29486,0.124,,
+unlabelled_hist,val,Oil Platform,15721,0.066,,
+unlabelled_hist,val,Sparse Floating Algae,9475,0.040,,
+unlabelled_hist,val,Ship,6777,0.028,,
+unlabelled_hist,val,Foam,4908,0.021,,
+unlabelled_hist,val,Waves & Wakes,4222,0.018,,
+unlabelled_hist,val,Marine Debris,3776,0.016,,
+unlabelled_hist,val,Natural Organic Material,574,0.002,,
+unlabelled_hist,val,Dense Sargassum,237,0.001,,
+unlabelled_hist,val,Jellyfish,124,0.001,,
