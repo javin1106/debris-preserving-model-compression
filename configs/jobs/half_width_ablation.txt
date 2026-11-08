@@ -1,0 +1,10 @@
+# Half width (x0.5) ablation, 160 rounds (2026-11-08): teacher on labelled px only (D2), unlabelled px only (E2), debris CE x2 (C-long); seeds 0-2. Run with scripts/run_queue.sh.
+p3-D2-w0.5-s0-20261108-0000 --config configs/settings/D2.yaml --width 0.5 --seed 0 --phase p3
+p3-E2-w0.5-s0-20261108-0000 --config configs/settings/E2.yaml --width 0.5 --seed 0 --phase p3
+p3-Clong-w0.5-s0-20261108-0000 --config configs/settings/Clong.yaml --width 0.5 --seed 0 --phase p3
+p3-D2-w0.5-s1-20261108-0000 --config configs/settings/D2.yaml --width 0.5 --seed 1 --phase p3
+p3-E2-w0.5-s1-20261108-0000 --config configs/settings/E2.yaml --width 0.5 --seed 1 --phase p3
+p3-Clong-w0.5-s1-20261108-0000 --config configs/settings/Clong.yaml --width 0.5 --seed 1 --phase p3
+p3-D2-w0.5-s2-20261108-0000 --config configs/settings/D2.yaml --width 0.5 --seed 2 --phase p3
+p3-E2-w0.5-s2-20261108-0000 --config configs/settings/E2.yaml --width 0.5 --seed 2 --phase p3
+p3-Clong-w0.5-s2-20261108-0000 --config configs/settings/Clong.yaml --width 0.5 --seed 2 --phase p3

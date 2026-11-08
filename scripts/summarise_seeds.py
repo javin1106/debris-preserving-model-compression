@@ -21,6 +21,8 @@ DEBRIS = "Marine Debris"
 SEEDS = (0, 1, 2)
 METHODS = [("B-long", "labels only", "p2-Blong"),
            ("C-long", "debris errors count 2x", "p3-Clong"),
+           ("D2", "teacher on labelled px only, class-weighted", "p3-D2"),
+           ("E2", "teacher on unlabelled px only, class-weighted", "p3-E2"),
            ("F2", "teacher on labelled + unlabelled px, class-weighted, debris x2", "p3-F2")]
 COLS = [("debris_f1", "debris F1"), ("debris_recall", "debris recall"), ("debris_precision", "debris precision"),
         ("debris_iou", "debris IoU"), ("macro_f1", "macro-F1"), ("mIoU", "mIoU")]
